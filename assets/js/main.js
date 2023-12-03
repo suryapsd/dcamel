@@ -99,14 +99,14 @@ $(document).on("click", "#oneway-option", function () {
       margin: 20,
       animateOut: "fadeOut",
       animateIn: "fadeIn",
-      nav: false,
+      nav: true,
       dots: false,
       autoplayHoverPause: false,
       items: 1,
       navText: ["<span class='ion-ios-arrow-back'></span>", "<span class='ion-ios-arrow-forward'></span>"],
       responsive: {
         0: {
-          items: 1.5,
+          items: 1,
         },
         600: {
           items: 1,
