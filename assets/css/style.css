@@ -1,0 +1,440 @@
+/**************** banner part css start ****************/
+/* line 2, /Applications/MAMP/htdocs/palash/cl/july 2019/193 Travel/193 travel html/sass/_banner.scss */
+.banner_part {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background-image: url(https://source.unsplash.com/random/?beach);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+}
+
+@media (max-width: 575px) {
+  /* line 2, /Applications/MAMP/htdocs/palash/cl/july 2019/193 Travel/193 travel html/sass/_banner.scss */
+  .banner_part {
+    height: 650px;
+    background-color: #f0eed4;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  /* line 2, /Applications/MAMP/htdocs/palash/cl/july 2019/193 Travel/193 travel html/sass/_banner.scss */
+  .banner_part {
+    height: 650px;
+    background-color: #f0eed4;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* line 2, /Applications/MAMP/htdocs/palash/cl/july 2019/193 Travel/193 travel html/sass/_banner.scss */
+  .banner_part {
+    height: 700px;
+    background-color: #f0eed4;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  /* line 2, /Applications/MAMP/htdocs/palash/cl/july 2019/193 Travel/193 travel html/sass/_banner.scss */
+  .banner_part {
+    background-size: cover;
+    height: 650px;
+  }
+}
+
+/* line 28, /Applications/MAMP/htdocs/palash/cl/july 2019/193 Travel/193 travel html/sass/_banner.scss */
+.banner_part .banner_text {
+  display: table;
+  width: 100%;
+  height: 880px;
+}
+
+/* line 32, /Applications/MAMP/htdocs/palash/cl/july 2019/193 Travel/193 travel html/sass/_banner.scss */
+.banner_part .banner_text .banner_text_iner {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+@media (max-width: 575px) {
+  /* line 28, /Applications/MAMP/htdocs/palash/cl/july 2019/193 Travel/193 travel html/sass/_banner.scss */
+  .banner_part .banner_text {
+    text-align: center;
+    padding-top: 0px;
+    height: 650px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  /* line 28, /Applications/MAMP/htdocs/palash/cl/july 2019/193 Travel/193 travel html/sass/_banner.scss */
+  .banner_part .banner_text {
+    text-align: center;
+    padding-top: 0px;
+    height: 650px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* line 28, /Applications/MAMP/htdocs/palash/cl/july 2019/193 Travel/193 travel html/sass/_banner.scss */
+  .banner_part .banner_text {
+    text-align: center;
+    padding-top: 0px;
+    height: 700px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  /* line 28, /Applications/MAMP/htdocs/palash/cl/july 2019/193 Travel/193 travel html/sass/_banner.scss */
+  .banner_part .banner_text {
+    height: 650px;
+  }
+}
+
+/* line 55, /Applications/MAMP/htdocs/palash/cl/july 2019/193 Travel/193 travel html/sass/_banner.scss */
+.banner_part .banner_text p {
+  font-size: 24px;
+  color: #fff;
+}
+
+/* line 59, /Applications/MAMP/htdocs/palash/cl/july 2019/193 Travel/193 travel html/sass/_banner.scss */
+.banner_part .banner_text h1 {
+  font-size: 120px;
+  line-height: 1;
+  text-transform: capitalize;
+  color: #fff;
+  font-weight: 900;
+  margin-bottom: 22px;
+}
+
+@media (max-width: 575px) {
+  /* line 59, /Applications/MAMP/htdocs/palash/cl/july 2019/193 Travel/193 travel html/sass/_banner.scss */
+  .banner_part .banner_text h1 {
+    font-size: 30px;
+    margin-bottom: 15px;
+    line-height: 1.3;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  /* line 59, /Applications/MAMP/htdocs/palash/cl/july 2019/193 Travel/193 travel html/sass/_banner.scss */
+  .banner_part .banner_text h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+    line-height: 1.3;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* line 59, /Applications/MAMP/htdocs/palash/cl/july 2019/193 Travel/193 travel html/sass/_banner.scss */
+  .banner_part .banner_text h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+    line-height: 1.3;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  /* line 59, /Applications/MAMP/htdocs/palash/cl/july 2019/193 Travel/193 travel html/sass/_banner.scss */
+  .banner_part .banner_text h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+    line-height: 1.4;
+  }
+}
+
+/* line 86, /Applications/MAMP/htdocs/palash/cl/july 2019/193 Travel/193 travel html/sass/_banner.scss */
+.banner_part .banner_text h1 span {
+  color: #fe5c24;
+}
+
+/* line 91, /Applications/MAMP/htdocs/palash/cl/july 2019/193 Travel/193 travel html/sass/_banner.scss */
+.banner_part .banner_text h3 {
+  font-size: 48px;
+  font-weight: 300;
+  color: #fff;
+}
+
+@media (max-width: 575px) {
+  /* line 91, /Applications/MAMP/htdocs/palash/cl/july 2019/193 Travel/193 travel html/sass/_banner.scss */
+  .banner_part .banner_text h3 {
+    font-size: 28px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  /* line 91, /Applications/MAMP/htdocs/palash/cl/july 2019/193 Travel/193 travel html/sass/_banner.scss */
+  .banner_part .banner_text h3 {
+    font-size: 28px;
+  }
+}
+
+/* line 106, /Applications/MAMP/htdocs/palash/cl/july 2019/193 Travel/193 travel html/sass/_banner.scss */
+.banner_part .banner_text .btn_1 {
+  margin-top: 60px;
+  background-color: #2493e0;
+  padding: 23px 79px;
+}
+
+/* line 110, /Applications/MAMP/htdocs/palash/cl/july 2019/193 Travel/193 travel html/sass/_banner.scss */
+.banner_part .banner_text .btn_1:hover {
+  color: #fff;
+  background-color: #fe5c24;
+}
+
+/**************** hero part css end ****************/
+/*********** booking css start *************/
+/* line 2, /Applications/MAMP/htdocs/palash/cl/july 2019/193 Travel/193 travel html/sass/_booking.scss */
+.booking_part {
+  margin-top: -100px;
+  z-index: 9;
+  position: relative;
+}
+
+.navbar-nav .nav-link {
+  color: #333; /* Warna teks non-aktif */
+  font-weight: normal; /* Font normal untuk teks non-aktif */
+  margin: 0 10px;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+  color: #810000 !important; /* Warna teks saat aktif atau dihover, menggunakan !important untuk memastikan keutamaan */
+  font-weight: bold; /* Font medium untuk teks aktif atau dihover */
+  border-bottom: 1px solid #810000; /* Garis bawah saat aktif atau dihover */
+}
+
+/* Color for "Hotline" and social media icons */
+.navbar-nav .hotline,
+.navbar-nav .hotline a,
+.navbar-nav .hotline .nav-item .nav-link i {
+  color: #ff7f00; /* Orange color */
+}
+
+.navbar-nav .hotline:hover,
+.navbar-nav .hotline a:hover,
+.navbar-nav .hotline .nav-item .nav-link i:hover {
+  color: #810000; /* Red color on hover */
+}
+
+#heroText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+  z-index: 2;
+  width: 100%;
+}
+
+#carouselHero {
+  position: relative;
+}
+
+.carousel-hero-item {
+  position: relative;
+}
+
+.carousel-hero-inner {
+  height: 100vh;
+}
+
+.carousel-hero-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  z-index: 1;
+}
+
+/* Menambahkan efek lapisan gelap pada gambar carousel */
+.carousel-hero-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Warna lapisan gelap */
+}
+
+/* Style untuk crop image */
+.cropped-hero-image {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.cropped-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.cropped-image-blog {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.square-image {
+  width: 100%;
+  height: 65vh;
+  object-fit: cover;
+}
+
+.owl-carousel {
+  position: relative;
+}
+.owl-carousel .owl-item {
+  opacity: 1;
+}
+.owl-carousel .owl-item.active {
+  opacity: 1;
+}
+.owl-carousel .owl-nav {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+}
+.owl-carousel .owl-nav .owl-prev,
+.owl-carousel .owl-nav .owl-next {
+  position: absolute;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  margin-top: -60px;
+  color: rgba(0, 0, 0, 0.1) !important;
+  -webkit-transition: 0.7s;
+  -o-transition: 0.7s;
+  transition: 0.7s;
+  opacity: 0;
+}
+@media (prefers-reduced-motion: reduce) {
+  .owl-carousel .owl-nav .owl-prev,
+  .owl-carousel .owl-nav .owl-next {
+    -webkit-transition: none;
+    -o-transition: none;
+    transition: none;
+  }
+}
+.owl-carousel .owl-nav .owl-prev span:before,
+.owl-carousel .owl-nav .owl-next span:before {
+  font-size: 30px;
+}
+.owl-carousel .owl-nav .owl-prev {
+  left: 0;
+}
+.owl-carousel .owl-nav .owl-next {
+  right: 0;
+}
+.owl-carousel .owl-dots {
+  text-align: center;
+  margin-top: 20px;
+}
+.owl-carousel .owl-dots .owl-dot {
+  width: 10px;
+  height: 10px;
+  margin: 5px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+.owl-carousel .owl-dots .owl-dot:hover,
+.owl-carousel .owl-dots .owl-dot:focus {
+  outline: none !important;
+}
+.owl-carousel .owl-dots .owl-dot.active {
+  background: #1089ff;
+}
+.owl-carousel:hover .owl-nav .owl-prev,
+.owl-carousel:hover .owl-nav .owl-next {
+  opacity: 1;
+}
+.owl-carousel:hover .owl-nav .owl-prev {
+  left: -25px;
+}
+.owl-carousel:hover .owl-nav .owl-next {
+  right: -25px;
+}
+
+.owl-carousel.owl-drag .owl-item {
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+}
+
+.card-rounded-lg {
+  border-radius: 24px;
+}
+
+.card-rounded-md {
+  border-radius: 16px;
+}
+
+@media (max-width: 768px) {
+  .navbar-brand img {
+    width: 50%;
+  }
+}
+
+.img-testimoni {
+  border: 5px solid #ffffff;
+  margin: 0 auto;
+  position: absolute;
+  top: -60px;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.testimonial {
+  text-align: center;
+  padding: 85px 24px 45px 24px;
+  margin: 70px 0px 35px;
+  position: relative;
+}
+.testimonial .pic {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+  position: absolute;
+  top: -60px;
+  left: 0;
+  right: 0;
+}
+
+.testimonial .pic img {
+  width: 100%;
+  height: 100%;
+  border: 5px solid #ffffff;
+  border-radius: 50%;
+  object-fit: cover; /* Menyesuaikan gambar ke dalam lingkaran tanpa merubah aspek rasio */
+}
+.testimonial .description {
+  font-size: 15px;
+  color: #757575;
+  line-height: 27px;
+  margin-bottom: 20px;
+  position: relative;
+}
+.testimonial .description:before {
+  content: "\f10d";
+  font-family: "FontAwesome";
+  font-size: 32px;
+  color: #77a9dd;
+  position: absolute;
+  top: -15px;
+  left: -35px;
+}
+.testimonial .testimonial-profile {
+  position: relative;
+  margin: 20px 0 10px 0;
+}
+
+#return-date:disabled {
+  background-color: #f2f2f2;
+  color: #999999;
+}
