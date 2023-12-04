@@ -270,7 +270,7 @@
 
 .cropped-image {
   width: 100%;
-  height: 150px;
+  height: 180px;
   object-fit: cover;
 }
 
@@ -282,7 +282,7 @@
 
 .square-image {
   width: 100%;
-  height: 65vh;
+  height: 60vh;
   object-fit: cover;
 }
 
@@ -377,6 +377,9 @@
 @media (max-width: 768px) {
   .navbar-brand img {
     width: 50%;
+  }
+  .divider-text img {
+    width: 70%;
   }
 }
 

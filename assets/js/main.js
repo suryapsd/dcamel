@@ -6,7 +6,7 @@ $(document).on("click", "#return-option", function () {
   // Toggle kelas "active" pada tombol "return"
   $(this).toggleClass("active");
 
-  // Ambil elemen input "return-date"
+  // Ambil elemen input
   var returnDateInput = $("#return-date");
   var openCheck = $("#openCheck");
 
@@ -15,10 +15,6 @@ $(document).on("click", "#return-option", function () {
     returnDateInput.removeAttr("disabled");
     openCheck.removeAttr("disabled");
   }
-
-  // Log untuk memeriksa pemilihan elemen dan properti disabled
-  console.log("Return option active:", $(this).hasClass("active"));
-  console.log("Return date disabled:", returnDateInput.prop("disabled"));
 });
 
 // Use event delegation to handle the click event for "oneway"
