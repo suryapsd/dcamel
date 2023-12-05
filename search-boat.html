@@ -101,9 +101,9 @@
         <div class="col-12 mb-4">
           <div class="bs-stepper wizard-numbered mt-2">
             <div class="bs-stepper-header">
-              <div class="step" data-target="#select-trip">
+              <div class="step">
                 <button type="button" class="step-trigger">
-                  <span class="bs-stepper-circle">1</span>
+                  <span class="bs-stepper-circle bg-primary text-white">1</span>
                   <span class="bs-stepper-label">
                     <span class="bs-stepper-title">Select Trip</span>
                     <span class="bs-stepper-subtitle">Setup your best trip</span>
@@ -113,7 +113,7 @@
               <div class="line">
                 <i class="ti ti-chevron-right"></i>
               </div>
-              <div class="step" data-target="#shopping-cart">
+              <div class="step">
                 <button type="button" class="step-trigger">
                   <span class="bs-stepper-circle">2</span>
                   <span class="bs-stepper-label">
@@ -125,7 +125,7 @@
               <div class="line">
                 <i class="ti ti-chevron-right"></i>
               </div>
-              <div class="step" data-target="#booking-details">
+              <div class="step">
                 <button type="button" class="step-trigger">
                   <span class="bs-stepper-circle">3</span>
                   <span class="bs-stepper-label">
@@ -137,7 +137,7 @@
               <div class="line">
                 <i class="ti ti-chevron-right"></i>
               </div>
-              <div class="step" data-target="#payment">
+              <div class="step">
                 <button type="button" class="step-trigger">
                   <span class="bs-stepper-circle">4</span>
                   <span class="bs-stepper-label">
@@ -149,7 +149,7 @@
               <div class="line">
                 <i class="ti ti-chevron-right"></i>
               </div>
-              <div class="step" data-target="#finish">
+              <div class="step">
                 <button type="button" class="step-trigger">
                   <span class="bs-stepper-circle">5</span>
                   <span class="bs-stepper-label">
@@ -159,490 +159,345 @@
                 </button>
               </div>
             </div>
-            <div class="bs-stepper-content">
-              <form onSubmit="return false">
-                <!-- Search Boat Ticket -->
-                <div id="select-trip" class="content">
-                  <div class="content-header mb-3">
-                    <h5 class="mb-0">Search Boat Ticket</h5>
-                  </div>
-                  <div class="nav-align-top">
-                    <ul class="nav nav-tabs" role="tablist">
-                      <li class="nav-item">
-                        <button type="button" class="nav-link active" id="oneway-option">Oneway</button>
-                      </li>
-                      <li class="nav-item">
-                        <button type="button" class="nav-link" id="return-option">Return</button>
-                      </li>
-                    </ul>
-                    <div class="tab-content">
-                      <div class="tab-pane fade show active" id="oneway" role="tabpanel">
-                        <form>
-                          <div class="row gx- mb-3">
-                            <div class="col-md-6">
-                              <label class="form-label" for="from">From</label>
-                              <div class="input-group input-group-merge">
-                                <span id="from" class="input-group-text"><i class="ti ti-map-pin"></i></span>
-                                <select class="form-select" id="from" aria-label="Default select example">
-                                  <option selected>Select from</option>
-                                  <option value="1">One</option>
-                                  <option value="2">Two</option>
-                                  <option value="3">Three</option>
-                                </select>
-                              </div>
-                            </div>
-                            <div class="col-md-6">
-                              <label class="form-label" for="to">To</label>
-                              <div class="input-group input-group-merge">
-                                <span id="to" class="input-group-text"><i class="ti ti-map-pin"></i></span>
-                                <select class="form-select" id="to" aria-label="Default select example">
-                                  <option selected>Select to</option>
-                                  <option value="1">One</option>
-                                  <option value="2">Two</option>
-                                  <option value="3">Three</option>
-                                </select>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="row gx-4 mb-3">
-                            <div class="col-md-6">
-                              <label class="form-label" for="from">Departure Data</label>
-                              <div class="input-group">
-                                <span class="input-group-text"><i class="ti ti-calendar"></i></span>
-                                <input type="date" class="form-control" placeholder="YYYY-MM-DD" id="departure-date" />
-                              </div>
-                            </div>
-                            <div class="col-md-6">
-                              <label class="form-label" for="return">Return Date</label>
-                              <div class="input-group">
-                                <span class="input-group-text"><i class="ti ti-calendar"></i></span>
-                                <input type="date" class="form-control" placeholder="YYYY-MM-DD" id="return-date" disabled />
-                                <span class="input-group-text">
-                                  <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="openCheck" disabled />
-                                    <label class="form-check-label" for="openCheck">Open <i class="fa-regular fa-circle-question me-1 fa-lg" data-bs-toggle="tooltip" data-bs-placement="bottom" title="you can tell us your return date later (maximum one day before you return)"></i></label>
-                                  </div>
-                                </span>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="row gx-4 mb-3">
-                            <div class="col-md-4">
-                              <label class="form-label" for="adult">Adult</label>
-                              <div class="input-group input-group-merge">
-                                <span id="adult" class="input-group-text"><i class="ti ti-user-plus"></i></span>
-                                <select class="form-select" id="adult" aria-label="Default select example">
-                                  <option selected>Select to</option>
-                                  <option value="1">One</option>
-                                  <option value="2">Two</option>
-                                  <option value="3">Three</option>
-                                </select>
-                              </div>
-                            </div>
-                            <div class="col-md-4">
-                              <label class="form-label" for="child">Child</label>
-                              <div class="input-group input-group-merge">
-                                <span id="child" class="input-group-text"><i class="ti ti-user-plus"></i></span>
-                                <select class="form-select" id="child" aria-label="Default select example">
-                                  <option selected>Select to</option>
-                                  <option value="1">One</option>
-                                  <option value="2">Two</option>
-                                  <option value="3">Three</option>
-                                </select>
-                              </div>
-                            </div>
-                            <div class="col-md-4">
-                              <label class="form-label" for="infant">Infant</label>
-                              <div class="input-group input-group-merge">
-                                <span id="infant" class="input-group-text"><i class="ti ti-user-plus"></i></span>
-                                <select class="form-select" id="infant" aria-label="Default select example">
-                                  <option selected>Select to</option>
-                                  <option value="1">One</option>
-                                  <option value="2">Two</option>
-                                  <option value="3">Three</option>
-                                </select>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="d-grid col-lg-12 mt-4">
-                            <button type="button" class="btn btn-primary"><span class="ti-xs ti ti-search me-1"></span> Search Ticket</button>
-                          </div>
-                        </form>
-                      </div>
-                    </div>
-                  </div>
-                  <hr class="my-4 mx-n4" />
-                  <div class="col card overflow-hidden">
-                    <div class="bg-light">
-                      <h5 class="m-0 text-center pt-2">Departure</h5>
-                      <p class="m-0 text-center pb-2">Fri, 12 Nov 2023 | Lembongan > Sanur</p>
-                    </div>
-                    <div class="col row d-flex justify-content-between align-items-center m-4">
-                      <div class="col-md-6 d-flex justify-content-between align-items-center p-0">
-                        <div class="m-0">
-                          <h5 class="m-0">12:30 PM</h5>
-                          <p class="m-0">Lembongan</p>
-                        </div>
-                        <div class="divider col m-3">
-                          <div class="divider-text">
-                            <img class="img-fluid" src="./assets/img/logo-rounded.png" alt="Card image cap" />
-                          </div>
-                        </div>
-                        <div class="m-0">
-                          <h5 class="m-0 text-end">12:30 PM</h5>
-                          <p class="m-0 text-end">Lembongan</p>
-                        </div>
-                      </div>
-                      <div class="col-md-1 h-px-100 d-none d-md-block">
-                        <div class="divider divider-vertical"></div>
-                      </div>
-                      <div class="col-md-5 d-flex justify-content-center p-0 mt-3 mt-md-0">
-                        <div class="featured-carousel3 owl-carousel">
-                          <div class="col">
-                            <div class="form-check custom-option custom-option-image custom-option-image-radio p-2 px-2">
-                              <label class="form-check-label custom-option-content" for="customRadioImg1">
-                                <span class="custom-option-body">
-                                  <small class="m-0 text-muted">Economy</small><br />
-                                  <small class="m-0 mt-2 text-muted"><del>IDR 500.000</del></small>
-                                  <h4 class="m-0 mb-2"><span class="fs-6 fw-normal">IDR</span> 800.000</h4>
-                                  <small class="m-0 text-primary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="you can tell us your return date later (maximum one day before you return)"><i class="fa-regular fa-circle-question me-1"></i>More Details</small>
-                                </span>
-                              </label>
-                              <input name="customRadioImage" class="form-check-input" type="radio" value="customRadioImg1" id="customRadioImg1" checked />
-                            </div>
-                          </div>
-                          <div class="col">
-                            <div class="form-check custom-option custom-option-image custom-option-image-radio p-2 px-2">
-                              <label class="form-check-label custom-option-content" for="customRadioImg2">
-                                <span class="custom-option-body">
-                                  <small class="m-0 text-muted">Executive</small><br />
-                                  <small class="m-0 mt-2 text-muted"><del>IDR 900.000</del></small>
-                                  <h4 class="m-0 mb-2"><span class="fs-6 fw-normal">IDR</span> 800.000</h4>
-                                  <small class="m-0 text-primary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="you can tell us your return date later (maximum one day before you return)"><i class="fa-regular fa-circle-question me-1"></i>More Details</small>
-                                </span>
-                              </label>
-                              <input name="customRadioImage" class="form-check-input" type="radio" value="customRadioImg2" id="customRadioImg2" />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <hr class="m-0" />
-                    <div class="col row d-flex justify-content-between align-items-center m-4">
-                      <div class="col-md-6 d-flex justify-content-between align-items-center p-0">
-                        <div class="m-0">
-                          <h5 class="m-0">12:30 PM</h5>
-                          <p class="m-0">Lembongan</p>
-                        </div>
-                        <div class="divider col m-3">
-                          <div class="divider-text">
-                            <img class="img-fluid" src="./assets/img/logo-rounded.png" alt="Card image cap" />
-                          </div>
-                        </div>
-                        <div class="m-0">
-                          <h5 class="m-0 text-end">12:30 PM</h5>
-                          <p class="m-0 text-end">Lembongan</p>
-                        </div>
-                      </div>
-                      <div class="col-md-1 h-px-100 d-none d-md-block">
-                        <div class="divider divider-vertical"></div>
-                      </div>
-                      <div class="col-md-5 d-flex justify-content-center p-0 mt-3 mt-md-0">
-                        <div class="featured-carousel3 owl-carousel">
-                          <div class="col">
-                            <div class="form-check custom-option custom-option-image custom-option-image-radio p-2 px-2">
-                              <label class="form-check-label custom-option-content" for="customRadioImg1">
-                                <span class="custom-option-body">
-                                  <small class="m-0 text-muted">Economy</small><br />
-                                  <small class="m-0 mt-2 text-muted"><del>IDR 500.000</del></small>
-                                  <h4 class="m-0 mb-2"><span class="fs-6 fw-normal">IDR</span> 800.000</h4>
-                                  <small class="m-0 text-primary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="you can tell us your return date later (maximum one day before you return)"><i class="fa-regular fa-circle-question me-1"></i>More Details</small>
-                                </span>
-                              </label>
-                              <input name="customRadioImage" class="form-check-input" type="radio" value="customRadioImg1" id="customRadioImg1" checked />
-                            </div>
-                          </div>
-                          <div class="col">
-                            <div class="form-check custom-option custom-option-image custom-option-image-radio p-2 px-2">
-                              <label class="form-check-label custom-option-content" for="customRadioImg2">
-                                <span class="custom-option-body">
-                                  <small class="m-0 text-muted">Executive</small><br />
-                                  <small class="m-0 mt-2 text-muted"><del>IDR 900.000</del></small>
-                                  <h4 class="m-0 mb-2"><span class="fs-6 fw-normal">IDR</span> 800.000</h4>
-                                  <small class="m-0 text-primary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="you can tell us your return date later (maximum one day before you return)"><i class="fa-regular fa-circle-question me-1"></i>More Details</small>
-                                </span>
-                              </label>
-                              <input name="customRadioImage" class="form-check-input" type="radio" value="customRadioImg2" id="customRadioImg2" />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col card overflow-hidden mt-4">
-                    <div class="bg-light">
-                      <h5 class="m-0 text-center pt-2">Return</h5>
-                      <p class="m-0 text-center pb-2">Lembongan > Sanur</p>
-                    </div>
-                    <div class="col row d-flex justify-content-between align-items-center m-4">
-                      <div class="col-md-6 d-flex justify-content-between align-items-center p-0">
-                        <div class="m-0">
-                          <h5 class="m-0">12:30 PM</h5>
-                          <p class="m-0">Lembongan</p>
-                        </div>
-                        <div class="divider col m-3">
-                          <div class="divider-text">
-                            <img class="img-fluid" src="./assets/img/logo-rounded.png" alt="Card image cap" />
-                          </div>
-                        </div>
-                        <div class="m-0">
-                          <h5 class="m-0 text-end">12:30 PM</h5>
-                          <p class="m-0 text-end">Lembongan</p>
-                        </div>
-                      </div>
-                      <div class="col-md-1 h-px-100 d-none d-md-block">
-                        <div class="divider divider-vertical"></div>
-                      </div>
-                      <div class="col-md-5 d-flex justify-content-center p-0 mt-3 mt-md-0">
-                        <div class="featured-carousel3 owl-carousel">
-                          <div class="col">
-                            <div class="form-check custom-option custom-option-image custom-option-image-radio p-2 px-2">
-                              <label class="form-check-label custom-option-content" for="customRadioImg5">
-                                <span class="custom-option-body">
-                                  <small class="m-0 text-muted">Economy</small><br />
-                                  <small class="m-0 mt-2 text-muted"><del>IDR 500.000</del></small>
-                                  <h4 class="m-0 mb-2"><span class="fs-6 fw-normal">IDR</span> 800.000</h4>
-                                  <small class="m-0 text-primary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="you can tell us your return date later (maximum one day before you return)"><i class="fa-regular fa-circle-question me-1"></i>More Details</small>
-                                </span>
-                              </label>
-                              <input name="customRadioImage" class="form-check-input" type="radio" value="customRadioImg5" id="customRadioImg5" checked />
-                            </div>
-                          </div>
-                          <div class="col">
-                            <div class="form-check custom-option custom-option-image custom-option-image-radio p-2 px-2">
-                              <label class="form-check-label custom-option-content" for="customRadioImg6">
-                                <span class="custom-option-body">
-                                  <small class="m-0 text-muted">Executive</small><br />
-                                  <small class="m-0 mt-2 text-muted"><del>IDR 900.000</del></small>
-                                  <h4 class="m-0 mb-2"><span class="fs-6 fw-normal">IDR</span> 800.000</h4>
-                                  <small class="m-0 text-primary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="you can tell us your return date later (maximum one day before you return)"><i class="fa-regular fa-circle-question me-1"></i>More Details</small>
-                                </span>
-                              </label>
-                              <input name="customRadioImage" class="form-check-input" type="radio" value="customRadioImg6" id="customRadioImg6" />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <hr class="m-0" />
-                    <div class="col row d-flex justify-content-between align-items-center m-4">
-                      <div class="col-md-6 d-flex justify-content-between align-items-center p-0">
-                        <div class="m-0">
-                          <h5 class="m-0">12:30 PM</h5>
-                          <p class="m-0">Lembongan</p>
-                        </div>
-                        <div class="divider col m-3">
-                          <div class="divider-text">
-                            <img class="img-fluid" src="./assets/img/logo-rounded.png" alt="Card image cap" />
-                          </div>
-                        </div>
-                        <div class="m-0">
-                          <h5 class="m-0 text-end">12:30 PM</h5>
-                          <p class="m-0 text-end">Lembongan</p>
-                        </div>
-                      </div>
-                      <div class="col-md-1 h-px-100 d-none d-md-block">
-                        <div class="divider divider-vertical"></div>
-                      </div>
-                      <div class="col-md-5 d-flex justify-content-center p-0 mt-3 mt-md-0">
-                        <div class="featured-carousel3 owl-carousel">
-                          <div class="col">
-                            <div class="form-check custom-option custom-option-image custom-option-image-radio p-2 px-2">
-                              <label class="form-check-label custom-option-content" for="customRadioImg3">
-                                <span class="custom-option-body">
-                                  <small class="m-0 text-muted">Economy</small><br />
-                                  <small class="m-0 mt-2 text-muted"><del>IDR 500.000</del></small>
-                                  <h4 class="m-0 mb-2"><span class="fs-6 fw-normal">IDR</span> 800.000</h4>
-                                  <small class="m-0 text-primary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="you can tell us your return date later (maximum one day before you return)"><i class="fa-regular fa-circle-question me-1"></i>More Details</small>
-                                </span>
-                              </label>
-                              <input name="customRadioImage" class="form-check-input" type="radio" value="customRadioImg3" id="customRadioImg3" checked />
-                            </div>
-                          </div>
-                          <div class="col">
-                            <div class="form-check custom-option custom-option-image custom-option-image-radio p-2 px-2">
-                              <label class="form-check-label custom-option-content" for="customRadioImg4">
-                                <span class="custom-option-body">
-                                  <small class="m-0 text-muted">Executive</small><br />
-                                  <small class="m-0 mt-2 text-muted"><del>IDR 900.000</del></small>
-                                  <h4 class="m-0 mb-2"><span class="fs-6 fw-normal">IDR</span> 800.000</h4>
-                                  <small class="m-0 text-primary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="you can tell us your return date later (maximum one day before you return)"><i class="fa-regular fa-circle-question me-1"></i>More Details</small>
-                                </span>
-                              </label>
-                              <input name="customRadioImage" class="form-check-input" type="radio" value="customRadioImg4" id="customRadioImg4" />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <hr class="my-4 mx-n4" />
-                  <div class="col-12 d-flex justify-content-between">
-                    <div class="col-md-6 d-flex justify-content-between align-items-center">
-                      <h5 class="m-0">Sub Total:</h5>
-                      <span>IDR <span class="fs-4 fw-semibold">1.600.000</span></span>
-                    </div>
-                    <button class="col-md-5 btn btn-primary btn-next">
-                      <span class="align-middle d-sm-inline-block d-none me-sm-1">Booking Now</span>
-                      <i class="fa-solid fa-arrow-right"></i>
-                    </button>
-                  </div>
+            <form action="">
+              <!-- Search Boat Ticket -->
+              <div class="m-4">
+                <div class="content-header mb-3">
+                  <h5 class="mb-0">Search Boat Ticket</h5>
                 </div>
-                <!-- Personal Info -->
-                <div id="shopping-cart" class="content">
-                  <div class="content-header mb-3">
-                    <h6 class="mb-0">Personal Info</h6>
-                    <small>Enter Your Personal Info.</small>
-                  </div>
-                  <div class="row g-3">
-                    <div class="col-sm-6">
-                      <label class="form-label" for="first-name">First Name</label>
-                      <input type="text" id="first-name" class="form-control" placeholder="John" />
-                    </div>
-                    <div class="col-sm-6">
-                      <label class="form-label" for="last-name">Last Name</label>
-                      <input type="text" id="last-name" class="form-control" placeholder="Doe" />
-                    </div>
-                    <div class="col-sm-6">
-                      <label class="form-label" for="country">Country</label>
-                      <select class="select2" id="country">
-                        <option label=" "></option>
-                        <option>UK</option>
-                        <option>USA</option>
-                        <option>Spain</option>
-                        <option>France</option>
-                        <option>Italy</option>
-                        <option>Australia</option>
-                      </select>
-                    </div>
-                    <div class="col-sm-6">
-                      <label class="form-label" for="language">Language</label>
-                      <select class="selectpicker w-auto" id="language" data-style="btn-transparent" data-icon-base="ti" data-tick-icon="ti-check text-white" multiple>
-                        <option>English</option>
-                        <option>French</option>
-                        <option>Spanish</option>
-                      </select>
-                    </div>
-                    <div class="col-12 d-flex justify-content-between">
-                      <button class="btn btn-label-secondary btn-prev">
-                        <i class="ti ti-arrow-left me-sm-1 me-0"></i>
-                        <span class="align-middle d-sm-inline-block d-none">Previous</span>
-                      </button>
-                      <button class="btn btn-primary btn-next">
-                        <span class="align-middle d-sm-inline-block d-none me-sm-1">Next</span>
-                        <i class="ti ti-arrow-right"></i>
-                      </button>
+                <div class="nav-align-top">
+                  <ul class="nav nav-tabs" role="tablist">
+                    <li class="nav-item">
+                      <button type="button" class="nav-link active" id="oneway-option">Oneway</button>
+                    </li>
+                    <li class="nav-item">
+                      <button type="button" class="nav-link" id="return-option">Return</button>
+                    </li>
+                  </ul>
+                  <div class="tab-content">
+                    <div class="tab-pane fade show active" id="oneway" role="tabpanel">
+                      <form>
+                        <div class="row gx- mb-3">
+                          <div class="col-md-6">
+                            <label class="form-label" for="from">From</label>
+                            <div class="input-group input-group-merge">
+                              <span id="from" class="input-group-text"><i class="ti ti-map-pin"></i></span>
+                              <select class="form-select" id="from" aria-label="Default select example">
+                                <option selected>Select from</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <label class="form-label" for="to">To</label>
+                            <div class="input-group input-group-merge">
+                              <span id="to" class="input-group-text"><i class="ti ti-map-pin"></i></span>
+                              <select class="form-select" id="to" aria-label="Default select example">
+                                <option selected>Select to</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row gx-4 mb-3">
+                          <div class="col-md-6">
+                            <label class="form-label" for="from">Departure Data</label>
+                            <div class="input-group">
+                              <span class="input-group-text"><i class="ti ti-calendar"></i></span>
+                              <input type="date" class="form-control" placeholder="YYYY-MM-DD" id="departure-date" />
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <label class="form-label" for="return">Return Date</label>
+                            <div class="input-group">
+                              <span class="input-group-text"><i class="ti ti-calendar"></i></span>
+                              <input type="date" class="form-control" placeholder="YYYY-MM-DD" id="return-date" disabled />
+                              <span class="input-group-text">
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="openCheck" disabled />
+                                  <label class="form-check-label" for="openCheck">Open <i class="fa-regular fa-circle-question me-1 fa-lg" data-bs-toggle="tooltip" data-bs-placement="bottom" title="you can tell us your return date later (maximum one day before you return)"></i></label>
+                                </div>
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row gx-4 mb-3">
+                          <div class="col-md-4">
+                            <label class="form-label" for="adult">Adult</label>
+                            <div class="input-group input-group-merge">
+                              <span id="adult" class="input-group-text"><i class="ti ti-user-plus"></i></span>
+                              <select class="form-select" id="adult" aria-label="Default select example">
+                                <option selected>Select to</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-md-4">
+                            <label class="form-label" for="child">Child</label>
+                            <div class="input-group input-group-merge">
+                              <span id="child" class="input-group-text"><i class="ti ti-user-plus"></i></span>
+                              <select class="form-select" id="child" aria-label="Default select example">
+                                <option selected>Select to</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-md-4">
+                            <label class="form-label" for="infant">Infant</label>
+                            <div class="input-group input-group-merge">
+                              <span id="infant" class="input-group-text"><i class="ti ti-user-plus"></i></span>
+                              <select class="form-select" id="infant" aria-label="Default select example">
+                                <option selected>Select to</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="d-grid col-lg-12 mt-4">
+                          <button type="button" class="btn btn-primary"><span class="ti-xs ti ti-search me-1"></span> Search Ticket</button>
+                        </div>
+                      </form>
                     </div>
                   </div>
                 </div>
-                <!-- Social Links -->
-                <div id="booking-details" class="content">
-                  <div class="content-header mb-3">
-                    <h6 class="mb-0">Social Links</h6>
-                    <small>Enter Your Social Links.</small>
+                <hr class="my-4 mx-n4" />
+                <div class="col card overflow-hidden">
+                  <div class="bg-light">
+                    <h6 class="m-0 text-center pt-2">Departure</h6>
+                    <p class="m-0 text-center pb-2">Fri, 12 Nov 2023 | Lembongan > Sanur</p>
                   </div>
-                  <div class="row g-3">
-                    <div class="col-sm-6">
-                      <label class="form-label" for="twitter">Twitter</label>
-                      <input type="text" id="twitter" class="form-control" placeholder="https://twitter.com/abc" />
+                  <div class="col row d-flex justify-content-between align-items-center m-4">
+                    <div class="col-md-6 d-flex justify-content-between align-items-center p-0">
+                      <div class="m-0">
+                        <h5 class="m-0">12:30 PM</h5>
+                        <p class="m-0">Lembongan</p>
+                      </div>
+                      <div class="divider col m-3">
+                        <div class="divider-text">
+                          <img class="img-fluid" src="./assets/img/logo-rounded.png" alt="Card image cap" />
+                        </div>
+                      </div>
+                      <div class="m-0">
+                        <h5 class="m-0 text-end">12:30 PM</h5>
+                        <p class="m-0 text-end">Lembongan</p>
+                      </div>
                     </div>
-                    <div class="col-sm-6">
-                      <label class="form-label" for="facebook">Facebook</label>
-                      <input type="text" id="facebook" class="form-control" placeholder="https://facebook.com/abc" />
+                    <div class="col-md-1 h-px-100 d-none d-md-block">
+                      <div class="divider divider-vertical"></div>
                     </div>
-                    <div class="col-sm-6">
-                      <label class="form-label" for="google">Google+</label>
-                      <input type="text" id="google" class="form-control" placeholder="https://plus.google.com/abc" />
+                    <div class="col-md-5 d-flex justify-content-center p-0 mt-3 mt-md-0">
+                      <div class="featured-carousel3 owl-carousel">
+                        <div class="col">
+                          <div class="form-check custom-option custom-option-image custom-option-image-radio p-2 px-2">
+                            <label class="form-check-label custom-option-content" for="customRadioImg1">
+                              <span class="custom-option-body">
+                                <small class="m-0 text-muted">Economy</small><br />
+                                <small class="m-0 mt-2 text-muted"><del>IDR 500.000</del></small>
+                                <h4 class="m-0 mb-2"><span class="fs-6 fw-normal">IDR</span> 800.000</h4>
+                                <small class="m-0 text-primary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="you can tell us your return date later (maximum one day before you return)"><i class="fa-regular fa-circle-question me-1"></i>More Details</small>
+                              </span>
+                            </label>
+                            <input name="customRadioImage" class="form-check-input" type="radio" value="customRadioImg1" id="customRadioImg1" checked />
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="form-check custom-option custom-option-image custom-option-image-radio p-2 px-2">
+                            <label class="form-check-label custom-option-content" for="customRadioImg2">
+                              <span class="custom-option-body">
+                                <small class="m-0 text-muted">Executive</small><br />
+                                <small class="m-0 mt-2 text-muted"><del>IDR 900.000</del></small>
+                                <h4 class="m-0 mb-2"><span class="fs-6 fw-normal">IDR</span> 800.000</h4>
+                                <small class="m-0 text-primary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="you can tell us your return date later (maximum one day before you return)"><i class="fa-regular fa-circle-question me-1"></i>More Details</small>
+                              </span>
+                            </label>
+                            <input name="customRadioImage" class="form-check-input" type="radio" value="customRadioImg2" id="customRadioImg2" />
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                    <div class="col-sm-6">
-                      <label class="form-label" for="linkedin">LinkedIn</label>
-                      <input type="text" id="linkedin" class="form-control" placeholder="https://linkedin.com/abc" />
+                  </div>
+                  <hr class="m-0" />
+                  <div class="col row d-flex justify-content-between align-items-center m-4">
+                    <div class="col-md-6 d-flex justify-content-between align-items-center p-0">
+                      <div class="m-0">
+                        <h5 class="m-0">12:30 PM</h5>
+                        <p class="m-0">Lembongan</p>
+                      </div>
+                      <div class="divider col m-3">
+                        <div class="divider-text">
+                          <img class="img-fluid" src="./assets/img/logo-rounded.png" alt="Card image cap" />
+                        </div>
+                      </div>
+                      <div class="m-0">
+                        <h5 class="m-0 text-end">12:30 PM</h5>
+                        <p class="m-0 text-end">Lembongan</p>
+                      </div>
                     </div>
-                    <div class="col-12 d-flex justify-content-between">
-                      <button class="btn btn-label-secondary btn-prev">
-                        <i class="ti ti-arrow-left me-sm-1 me-0"></i>
-                        <span class="align-middle d-sm-inline-block d-none">Previous</span>
-                      </button>
-                      <button class="btn btn-success btn-submit">Submit</button>
+                    <div class="col-md-1 h-px-100 d-none d-md-block">
+                      <div class="divider divider-vertical"></div>
+                    </div>
+                    <div class="col-md-5 d-flex justify-content-center p-0 mt-3 mt-md-0">
+                      <div class="featured-carousel3 owl-carousel">
+                        <div class="col">
+                          <div class="form-check custom-option custom-option-image custom-option-image-radio p-2 px-2">
+                            <label class="form-check-label custom-option-content" for="customRadioImg1">
+                              <span class="custom-option-body">
+                                <small class="m-0 text-muted">Economy</small><br />
+                                <small class="m-0 mt-2 text-muted"><del>IDR 500.000</del></small>
+                                <h4 class="m-0 mb-2"><span class="fs-6 fw-normal">IDR</span> 800.000</h4>
+                                <small class="m-0 text-primary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="you can tell us your return date later (maximum one day before you return)"><i class="fa-regular fa-circle-question me-1"></i>More Details</small>
+                              </span>
+                            </label>
+                            <input name="customRadioImage" class="form-check-input" type="radio" value="customRadioImg1" id="customRadioImg1" checked />
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="form-check custom-option custom-option-image custom-option-image-radio p-2 px-2">
+                            <label class="form-check-label custom-option-content" for="customRadioImg2">
+                              <span class="custom-option-body">
+                                <small class="m-0 text-muted">Executive</small><br />
+                                <small class="m-0 mt-2 text-muted"><del>IDR 900.000</del></small>
+                                <h4 class="m-0 mb-2"><span class="fs-6 fw-normal">IDR</span> 800.000</h4>
+                                <small class="m-0 text-primary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="you can tell us your return date later (maximum one day before you return)"><i class="fa-regular fa-circle-question me-1"></i>More Details</small>
+                              </span>
+                            </label>
+                            <input name="customRadioImage" class="form-check-input" type="radio" value="customRadioImg2" id="customRadioImg2" />
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <!-- Payment -->
-                <div id="payment" class="content">
-                  <div class="content-header mb-3">
-                    <h6 class="mb-0">Social Links</h6>
-                    <small>Enter Your Social Links.</small>
+                <div class="col card overflow-hidden mt-4">
+                  <div class="bg-light">
+                    <h6 class="m-0 text-center pt-2">Return</h6>
+                    <p class="m-0 text-center pb-2">Lembongan > Sanur</p>
                   </div>
-                  <div class="row g-3">
-                    <div class="col-sm-6">
-                      <label class="form-label" for="twitter">Twitter</label>
-                      <input type="text" id="twitter" class="form-control" placeholder="https://twitter.com/abc" />
+                  <div class="col row d-flex justify-content-between align-items-center m-4">
+                    <div class="col-md-6 d-flex justify-content-between align-items-center p-0">
+                      <div class="m-0">
+                        <h5 class="m-0">12:30 PM</h5>
+                        <p class="m-0">Lembongan</p>
+                      </div>
+                      <div class="divider col m-3">
+                        <div class="divider-text">
+                          <img class="img-fluid" src="./assets/img/logo-rounded.png" alt="Card image cap" />
+                        </div>
+                      </div>
+                      <div class="m-0">
+                        <h5 class="m-0 text-end">12:30 PM</h5>
+                        <p class="m-0 text-end">Lembongan</p>
+                      </div>
                     </div>
-                    <div class="col-sm-6">
-                      <label class="form-label" for="facebook">Facebook</label>
-                      <input type="text" id="facebook" class="form-control" placeholder="https://facebook.com/abc" />
+                    <div class="col-md-1 h-px-100 d-none d-md-block">
+                      <div class="divider divider-vertical"></div>
                     </div>
-                    <div class="col-sm-6">
-                      <label class="form-label" for="google">Google+</label>
-                      <input type="text" id="google" class="form-control" placeholder="https://plus.google.com/abc" />
+                    <div class="col-md-5 d-flex justify-content-center p-0 mt-3 mt-md-0">
+                      <div class="featured-carousel3 owl-carousel">
+                        <div class="col">
+                          <div class="form-check custom-option custom-option-image custom-option-image-radio p-2 px-2">
+                            <label class="form-check-label custom-option-content" for="customRadioImg5">
+                              <span class="custom-option-body">
+                                <small class="m-0 text-muted">Economy</small><br />
+                                <small class="m-0 mt-2 text-muted"><del>IDR 500.000</del></small>
+                                <h4 class="m-0 mb-2"><span class="fs-6 fw-normal">IDR</span> 800.000</h4>
+                                <small class="m-0 text-primary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="you can tell us your return date later (maximum one day before you return)"><i class="fa-regular fa-circle-question me-1"></i>More Details</small>
+                              </span>
+                            </label>
+                            <input name="customRadioImage" class="form-check-input" type="radio" value="customRadioImg5" id="customRadioImg5" checked />
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="form-check custom-option custom-option-image custom-option-image-radio p-2 px-2">
+                            <label class="form-check-label custom-option-content" for="customRadioImg6">
+                              <span class="custom-option-body">
+                                <small class="m-0 text-muted">Executive</small><br />
+                                <small class="m-0 mt-2 text-muted"><del>IDR 900.000</del></small>
+                                <h4 class="m-0 mb-2"><span class="fs-6 fw-normal">IDR</span> 800.000</h4>
+                                <small class="m-0 text-primary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="you can tell us your return date later (maximum one day before you return)"><i class="fa-regular fa-circle-question me-1"></i>More Details</small>
+                              </span>
+                            </label>
+                            <input name="customRadioImage" class="form-check-input" type="radio" value="customRadioImg6" id="customRadioImg6" />
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                    <div class="col-sm-6">
-                      <label class="form-label" for="linkedin">LinkedIn</label>
-                      <input type="text" id="linkedin" class="form-control" placeholder="https://linkedin.com/abc" />
+                  </div>
+                  <hr class="m-0" />
+                  <div class="col row d-flex justify-content-between align-items-center m-4">
+                    <div class="col-md-6 d-flex justify-content-between align-items-center p-0">
+                      <div class="m-0">
+                        <h5 class="m-0">12:30 PM</h5>
+                        <p class="m-0">Lembongan</p>
+                      </div>
+                      <div class="divider col m-3">
+                        <div class="divider-text">
+                          <img class="img-fluid" src="./assets/img/logo-rounded.png" alt="Card image cap" />
+                        </div>
+                      </div>
+                      <div class="m-0">
+                        <h5 class="m-0 text-end">12:30 PM</h5>
+                        <p class="m-0 text-end">Lembongan</p>
+                      </div>
                     </div>
-                    <div class="col-12 d-flex justify-content-between">
-                      <button class="btn btn-label-secondary btn-prev">
-                        <i class="ti ti-arrow-left me-sm-1 me-0"></i>
-                        <span class="align-middle d-sm-inline-block d-none">Previous</span>
-                      </button>
-                      <button class="btn btn-success btn-submit">Submit</button>
+                    <div class="col-md-1 h-px-100 d-none d-md-block">
+                      <div class="divider divider-vertical"></div>
+                    </div>
+                    <div class="col-md-5 d-flex justify-content-center p-0 mt-3 mt-md-0">
+                      <div class="featured-carousel3 owl-carousel">
+                        <div class="col">
+                          <div class="form-check custom-option custom-option-image custom-option-image-radio p-2 px-2">
+                            <label class="form-check-label custom-option-content" for="customRadioImg3">
+                              <span class="custom-option-body">
+                                <small class="m-0 text-muted">Economy</small><br />
+                                <small class="m-0 mt-2 text-muted"><del>IDR 500.000</del></small>
+                                <h4 class="m-0 mb-2"><span class="fs-6 fw-normal">IDR</span> 800.000</h4>
+                                <small class="m-0 text-primary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="you can tell us your return date later (maximum one day before you return)"><i class="fa-regular fa-circle-question me-1"></i>More Details</small>
+                              </span>
+                            </label>
+                            <input name="customRadioImage" class="form-check-input" type="radio" value="customRadioImg3" id="customRadioImg3" checked />
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="form-check custom-option custom-option-image custom-option-image-radio p-2 px-2">
+                            <label class="form-check-label custom-option-content" for="customRadioImg4">
+                              <span class="custom-option-body">
+                                <small class="m-0 text-muted">Executive</small><br />
+                                <small class="m-0 mt-2 text-muted"><del>IDR 900.000</del></small>
+                                <h4 class="m-0 mb-2"><span class="fs-6 fw-normal">IDR</span> 800.000</h4>
+                                <small class="m-0 text-primary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="you can tell us your return date later (maximum one day before you return)"><i class="fa-regular fa-circle-question me-1"></i>More Details</small>
+                              </span>
+                            </label>
+                            <input name="customRadioImage" class="form-check-input" type="radio" value="customRadioImg4" id="customRadioImg4" />
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <!-- Finish -->
-                <div id="finish" class="content">
-                  <div class="content-header mb-3">
-                    <h6 class="mb-0">Social Links</h6>
-                    <small>Enter Your Social Links.</small>
+                <hr class="my-4 mx-n4" />
+                <div class="col-12 d-flex justify-content-between">
+                  <div class="col-md-6 d-flex justify-content-between align-items-center">
+                    <h5 class="m-0">Sub Total:</h5>
+                    <span>IDR <span class="fs-4 fw-semibold">1.600.000</span></span>
                   </div>
-                  <div class="row g-3">
-                    <div class="col-sm-6">
-                      <label class="form-label" for="twitter">Twitter</label>
-                      <input type="text" id="twitter" class="form-control" placeholder="https://twitter.com/abc" />
-                    </div>
-                    <div class="col-sm-6">
-                      <label class="form-label" for="facebook">Facebook</label>
-                      <input type="text" id="facebook" class="form-control" placeholder="https://facebook.com/abc" />
-                    </div>
-                    <div class="col-sm-6">
-                      <label class="form-label" for="google">Google+</label>
-                      <input type="text" id="google" class="form-control" placeholder="https://plus.google.com/abc" />
-                    </div>
-                    <div class="col-sm-6">
-                      <label class="form-label" for="linkedin">LinkedIn</label>
-                      <input type="text" id="linkedin" class="form-control" placeholder="https://linkedin.com/abc" />
-                    </div>
-                    <div class="col-12 d-flex justify-content-between">
-                      <button class="btn btn-label-secondary btn-prev">
-                        <i class="ti ti-arrow-left me-sm-1 me-0"></i>
-                        <span class="align-middle d-sm-inline-block d-none">Previous</span>
-                      </button>
-                      <button class="btn btn-success btn-submit">Submit</button>
-                    </div>
-                  </div>
+                  <a href="shopping-cart.html" class="col-md-5 btn btn-primary btn-next">
+                    <span class="align-middle d-sm-inline-block d-none me-sm-1">Booking Now</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </a>
                 </div>
-              </form>
-            </div>
+              </div>
+            </form>
           </div>
         </div>
         <!-- /Default Wizard -->

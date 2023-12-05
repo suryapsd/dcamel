@@ -168,39 +168,39 @@ $(document).on("click", "#oneway-option", function () {
   // }
 })();
 
-(function () {
-  // Numbered Wizard
-  // --------------------------------------------------------------------
-  const wizardNumbered = document.querySelector(".wizard-numbered"),
-    wizardNumberedBtnNextList = [].slice.call(wizardNumbered.querySelectorAll(".btn-next")),
-    wizardNumberedBtnPrevList = [].slice.call(wizardNumbered.querySelectorAll(".btn-prev")),
-    wizardNumberedBtnSubmit = wizardNumbered.querySelector(".btn-submit");
+// (function () {
+//   // Numbered Wizard
+//   // --------------------------------------------------------------------
+//   const wizardNumbered = document.querySelector(".wizard-numbered"),
+//     wizardNumberedBtnNextList = [].slice.call(wizardNumbered.querySelectorAll(".btn-next")),
+//     wizardNumberedBtnPrevList = [].slice.call(wizardNumbered.querySelectorAll(".btn-prev")),
+//     wizardNumberedBtnSubmit = wizardNumbered.querySelector(".btn-submit");
 
-  if (typeof wizardNumbered !== undefined && wizardNumbered !== null) {
-    const numberedStepper = new Stepper(wizardNumbered, {
-      linear: false,
-    });
-    if (wizardNumberedBtnNextList) {
-      wizardNumberedBtnNextList.forEach((wizardNumberedBtnNext) => {
-        wizardNumberedBtnNext.addEventListener("click", (event) => {
-          numberedStepper.next();
-        });
-      });
-    }
-    if (wizardNumberedBtnPrevList) {
-      wizardNumberedBtnPrevList.forEach((wizardNumberedBtnPrev) => {
-        wizardNumberedBtnPrev.addEventListener("click", (event) => {
-          numberedStepper.previous();
-        });
-      });
-    }
-    if (wizardNumberedBtnSubmit) {
-      wizardNumberedBtnSubmit.addEventListener("click", (event) => {
-        alert("Submitted..!!");
-      });
-    }
-  }
-})();
+//   if (typeof wizardNumbered !== undefined && wizardNumbered !== null) {
+//     const numberedStepper = new Stepper(wizardNumbered, {
+//       linear: false,
+//     });
+//     if (wizardNumberedBtnNextList) {
+//       wizardNumberedBtnNextList.forEach((wizardNumberedBtnNext) => {
+//         wizardNumberedBtnNext.addEventListener("click", (event) => {
+//           numberedStepper.next();
+//         });
+//       });
+//     }
+//     if (wizardNumberedBtnPrevList) {
+//       wizardNumberedBtnPrevList.forEach((wizardNumberedBtnPrev) => {
+//         wizardNumberedBtnPrev.addEventListener("click", (event) => {
+//           numberedStepper.previous();
+//         });
+//       });
+//     }
+//     if (wizardNumberedBtnSubmit) {
+//       wizardNumberedBtnSubmit.addEventListener("click", (event) => {
+//         alert("Submitted..!!");
+//       });
+//     }
+//   }
+// })();
 
 (function () {
   const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
