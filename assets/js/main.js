@@ -90,13 +90,13 @@ $(document).on("click", "#oneway-option", function () {
 
   var carousel3 = function () {
     $(".featured-carousel3").owlCarousel({
-      loop: false,
+      loop: true,
       autoplay: false,
       margin: 20,
       animateOut: "fadeOut",
       animateIn: "fadeIn",
       nav: true,
-      dots: false,
+      dots: true,
       autoplayHoverPause: false,
       items: 1,
       navText: ["<span class='ion-ios-arrow-back'></span>", "<span class='ion-ios-arrow-forward'></span>"],

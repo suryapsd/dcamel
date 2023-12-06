@@ -447,3 +447,17 @@
     white-space: nowrap;
   }
 }
+
+/* Ganti warna dots sesuai keinginan Anda */
+.owl-dots .owl-dot {
+  border: 1px solid #810000 !important; /* Contoh warna biru */
+  background-color: transparent !important; /* Hapus warna di tengah dots */
+  height: 10px; /* Sesuaikan tinggi dots */
+  width: 10px; /* Sesuaikan lebar dots */
+  margin: 0 5px; /* Sesuaikan jarak antar dots */
+}
+
+/* Ganti warna dots ketika sedang aktif (current) */
+.owl-dots .owl-dot.active {
+  background-color: #810000 !important; /* Contoh warna merah */
+}
