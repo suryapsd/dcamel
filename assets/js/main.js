@@ -90,7 +90,7 @@ $(document).on("click", "#oneway-option", function () {
 
   var carousel3 = function () {
     $(".featured-carousel3").owlCarousel({
-      loop: true,
+      loop: false,
       autoplay: false,
       margin: 20,
       animateOut: "fadeOut",

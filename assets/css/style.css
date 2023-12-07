@@ -448,16 +448,36 @@
   }
 }
 
-/* Ganti warna dots sesuai keinginan Anda */
 .owl-dots .owl-dot {
-  border: 1px solid #810000 !important; /* Contoh warna biru */
-  background-color: transparent !important; /* Hapus warna di tengah dots */
-  height: 10px; /* Sesuaikan tinggi dots */
-  width: 10px; /* Sesuaikan lebar dots */
-  margin: 0 5px; /* Sesuaikan jarak antar dots */
+  border: 1px solid #810000 !important;
+  background-color: transparent !important;
+  height: 10px;
+  width: 10px;
+  margin: 0 5px;
 }
 
-/* Ganti warna dots ketika sedang aktif (current) */
 .owl-dots .owl-dot.active {
-  background-color: #810000 !important; /* Contoh warna merah */
+  background-color: #810000 !important;
+}
+
+.custom-radio-button__container input[type="radio"] {
+  display: none;
+  width: 100%;
+}
+.custom-radio-button {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  border: 1px solid #dbdade;
+  border-radius: 8px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.custom-radio-button:hover {
+  background-color: #efefef;
+}
+
+.custom-radio-button__container input[type="radio"]:checked + .custom-radio-button {
+  border: 1px solid #810000;
 }
