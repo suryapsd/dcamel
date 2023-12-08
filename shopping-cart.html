@@ -103,7 +103,7 @@
             <div class="bs-stepper-header">
               <div class="step">
                 <button type="button" class="step-trigger">
-                  <span class="bs-stepper-circle bg-primary text-white">1</span>
+                  <span class="bs-stepper-circle text-primary">1</span>
                   <span class="bs-stepper-label">
                     <span class="bs-stepper-title">Select Trip</span>
                     <span class="bs-stepper-subtitle">Setup your best trip</span>
@@ -169,26 +169,35 @@
                   <div class="col bg-light d-flex justify-between align-items-center px-4">
                     <div class="col">
                       <h6 class="m-0 pt-2">Departure</h6>
-                      <p class="m-0 pb-2">Fri, 12 Nov 2023 | Lembongan > Sanur</p>
+                      <p class="m-0 pb-2">Fri, 12 Nov 2023 | <span>Lembongan</span> > <span>Sanur</span></p>
                     </div>
                     <div class="col text-end">
                       <a href="http://">Delete</a>
                     </div>
                   </div>
                   <div class="col row d-flex justify-content-between align-items-center m-4">
-                    <div class="col-md-8 d-flex justify-content-between align-items-center p-0">
-                      <div class="m-0">
-                        <h5 class="m-0">12:30 PM</h5>
-                        <p class="m-0">Lembongan</p>
-                      </div>
-                      <div class="divider col m-3">
-                        <div class="divider-text">
-                          <img class="img-fluid" src="./assets/img/logo-rounded.png" alt="Card image cap" />
+                    <div class="col-md-8 p-0">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="m-0">
+                          <h5 class="m-0">12:30 PM</h5>
+                          <p class="m-0">Lembongan</p>
+                        </div>
+                        <div class="divider col m-3">
+                          <div class="divider-text">
+                            <img class="img-fluid" src="./assets/img/logo-rounded.png" alt="Card image cap" />
+                          </div>
+                        </div>
+                        <div class="m-0">
+                          <h5 class="m-0 text-end">12:30 PM</h5>
+                          <p class="m-0 text-end">Lembongan</p>
                         </div>
                       </div>
-                      <div class="m-0">
-                        <h5 class="m-0 text-end">12:30 PM</h5>
-                        <p class="m-0 text-end">Lembongan</p>
+                      <div class="d-flex gap-2 gap-md-3">
+                        <p><span>Adult: </span><span>1 </span>@ 100.000</p>
+                        <span>|</span>
+                        <p><span>Child: </span><span>1 </span>@ 200.000</p>
+                        <span>|</span>
+                        <p><span>Infant: </span><span>1 </span>@ 0</p>
                       </div>
                     </div>
                     <div class="col-md-1 h-px-100 d-none d-md-block">
@@ -205,7 +214,7 @@
                             <h4 class="m-0 mb-2 text-end"><span class="fs-6 fw-normal">IDR</span> 800.000</h4>
                           </span>
                         </label>
-                        <input name="customRadioImage" class="form-check-input" type="radio" value="customRadioImg1" id="customRadioImg1" checked />
+                        <!-- <input name="customRadioImage" class="form-check-input" type="radio" value="customRadioImg1" id="customRadioImg1" checked /> -->
                       </div>
                     </div>
                   </div>
@@ -239,7 +248,7 @@
                           </div>
                         </div>
                       </div>
-                      <hr class="d-md-none d-block my-3 m-0" />
+                      <hr class="d-md-none d-block my-4 m-0" />
                       <div class="col-md-4">
                         <div class="col">
                           <label class="form-label" for="multicol-email">Drop Off</label>
@@ -268,8 +277,16 @@
                           </div>
                         </div>
                       </div>
-                      <div class="col-md-3 d-flex justify-content-end align-items-end d-none d-md-block">
-                        <h6 class="m-0 text-end pb-2">IDR 300.000</h6>
+                      <div class="col d-flex flex-column">
+                        <div class="align-self-star mb-auto pt-4">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" />
+                            <label class="form-check-label m-0" for="defaultCheck1">If return pick up and drop same as depart</label>
+                          </div>
+                        </div>
+                        <div class="align-self-end d-none d-md-block">
+                          <h6 class="m-0 text-end pb-2 pe-4">IDR 300.000</h6>
+                        </div>
                       </div>
                     </div>
                     <div class="row pt-4 mb-3">
@@ -288,8 +305,155 @@
                         </div>
                       </div>
                       <div class="col-md-8 pt-md-2 d-none d-md-block">
-                        <h6 class="m-0 text-end pe-md-4 me-md-2">IDR 300.000</h6>
+                        <h6 class="m-0 text-end pe-md-3 me-md-2">IDR 300.000</h6>
                       </div>
+                    </div>
+                    <div class="form-check d-md-none d-block">
+                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" />
+                      <label class="form-check-label m-0" for="defaultCheck1">If return pick up and drop same as depart</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col card overflow-hidden mt-4">
+                  <div class="col bg-light d-flex justify-between align-items-center px-4">
+                    <div class="col">
+                      <h6 class="m-0 pt-2">Return</h6>
+                      <p class="m-0 pb-2">Fri, 12 Nov 2023 | <span>Sanur</span> > <span>Lembongan</span></p>
+                    </div>
+                    <div class="col text-end">
+                      <a href="http://">Delete</a>
+                    </div>
+                  </div>
+                  <div class="col row d-flex justify-content-between align-items-center m-4">
+                    <div class="col-md-8 p-0">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="m-0">
+                          <h5 class="m-0">12:30 PM</h5>
+                          <p class="m-0">Lembongan</p>
+                        </div>
+                        <div class="divider col m-3">
+                          <div class="divider-text">
+                            <img class="img-fluid" src="./assets/img/logo-rounded.png" alt="Card image cap" />
+                          </div>
+                        </div>
+                        <div class="m-0">
+                          <h5 class="m-0 text-end">12:30 PM</h5>
+                          <p class="m-0 text-end">Lembongan</p>
+                        </div>
+                      </div>
+                      <div class="d-flex gap-2 gap-md-3">
+                        <p><span>Adult: </span><span>1 </span>@ 100.000</p>
+                        <span>|</span>
+                        <p><span>Child: </span><span>1 </span>@ 200.000</p>
+                        <span>|</span>
+                        <p><span>Infant: </span><span>1 </span>@ 0</p>
+                      </div>
+                    </div>
+                    <div class="col-md-1 h-px-100 d-none d-md-block">
+                      <div class="divider divider-vertical"></div>
+                    </div>
+                    <div class="col-md-3 d-flex justify-content-center p-0 mt-3 mt-md-0">
+                      <div class="col form-check custom-option custom-option-image custom-option-image-radio p-2 px-4">
+                        <label class="form-check-label custom-option-content" for="customRadioImg1">
+                          <span class="custom-option-body">
+                            <small class="m-0 text-muted">Economy</small><br />
+                            <p class="m-0 mt-2 text-muted text-end">
+                              <small><del>IDR 500.000</del></small>
+                            </p>
+                            <h4 class="m-0 mb-2 text-end"><span class="fs-6 fw-normal">IDR</span> 800.000</h4>
+                          </span>
+                        </label>
+                        <!-- <input name="customRadioImage" class="form-check-input" type="radio" value="customRadioImg1" id="customRadioImg1" checked /> -->
+                      </div>
+                    </div>
+                  </div>
+                  <hr class="m-0" />
+                  <div class="col p-4">
+                    <div class="row">
+                      <div class="col-md-4 me-md-5 me-0">
+                        <div class="col">
+                          <label class="form-label" for="multicol-email">Pick Up</label>
+                          <div class="input-group">
+                            <label class="input-group-text" for="inputGroupSelect01">Pick Up</label>
+                            <select class="form-select" id="inputGroupSelect01">
+                              <option selected>Choose...</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                          </div>
+                          <small>Pick-up point upon departure</small>
+                        </div>
+                        <div class="col mt-2">
+                          <label class="form-label" for="multicol-email">Note</label>
+                          <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
+                          <small class="m-0 text-md-nowrap">Please write note box if your hotel / pick point or drop point not on list and please confirmation by Whatsapp or E-mail</small>
+                        </div>
+                        <div class="col mt-2">
+                          <!-- <label class="form-label" for="multicol-email">Extra Charge</label> -->
+                          <div class="input-group">
+                            <span class="input-group-text" id="basic-addon11">Extra Charge</span>
+                            <input type="text" class="form-control text-md-start text-end" placeholder="Extra Charge" value="IDR 150.000" aria-label="Extra Charge" aria-describedby="basic-addon11" disabled />
+                          </div>
+                        </div>
+                      </div>
+                      <hr class="d-md-none d-block my-4 m-0" />
+                      <div class="col-md-4">
+                        <div class="col">
+                          <label class="form-label" for="multicol-email">Drop Off</label>
+                          <div class="input-group">
+                            <label class="input-group-text" for="inputGroupSelect01">Drop Off</label>
+                            <select class="form-select" id="inputGroupSelect01">
+                              <option selected>Choose...</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                          </div>
+                          <small>Drop-off point upon arrival</small>
+                        </div>
+                        <div class="col mt-2">
+                          <label class="form-label" for="multicol-email">Note</label>
+                          <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
+                          <h5 class="m-0 text-nowrap d-none d-md-block">&nbsp;</h5>
+                          <small class="m-0 d-md-none d-block">Please write note box if your hotel / pick point or drop point not on list and please confirmation by Whatsapp or E-mail</small>
+                        </div>
+                        <div class="col mt-1">
+                          <!-- <label class="form-label" for="multicol-email">Extra Charge</label> -->
+                          <div class="input-group">
+                            <span class="input-group-text" id="basic-addon11">Extra Charge</span>
+                            <input type="text" class="form-control text-md-start text-end" placeholder="Extra Charge" value="IDR 150.000" aria-label="Extra Charge" aria-describedby="basic-addon11" disabled />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col d-flex flex-column">
+                        <div class="align-self-end d-none d-md-block mt-auto">
+                          <h6 class="m-0 text-end pb-2 pe-4">IDR 300.000</h6>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row pt-4 mb-3">
+                      <div class="col-md-2">
+                        <div class="input-group">
+                          <span class="input-group-text" id="basic-addon11">Luggage</span>
+                          <input type="number" class="form-control" placeholder="Extra Charge" value="3" aria-label="Extra Charge" aria-describedby="basic-addon11" max="10" />
+                          <span class="input-group-text d-md-none d-block">Free</span>
+                        </div>
+                      </div>
+                      <div class="col-md-2 mt-3 mt-md-0">
+                        <div class="input-group">
+                          <span class="input-group-text" id="basic-addon11">Surfcase</span>
+                          <input type="number" class="form-control" placeholder="Extra Charge" value="2" aria-label="Extra Charge" aria-describedby="basic-addon11" max="10" />
+                          <span class="input-group-text d-md-none d-block">IDR 300.000</span>
+                        </div>
+                      </div>
+                      <div class="col-md-8 pt-md-2 d-none d-md-block">
+                        <h6 class="m-0 text-end pe-md-3 me-md-2">IDR 300.000</h6>
+                      </div>
+                    </div>
+                    <div class="form-check d-md-none d-block">
+                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" />
+                      <label class="form-check-label m-0" for="defaultCheck1">If return pick up and drop same as depart</label>
                     </div>
                   </div>
                 </div>
@@ -310,10 +474,20 @@
                     </div>
                   </div>
                   <hr />
-                  <button class="col btn btn-primary">
-                    <span class="align-middle me-2">Procced Check Out</span>
-                    <i class="fa-solid fa-arrow-right"></i>
-                  </button>
+                  <div class="row">
+                    <div class="col-md-6 order-last order-md-first mt-2 mt-md-0">
+                      <a href="" class="d-block btn btn-outline-secondary">
+                        <i class="fa-solid fa-arrow-left"></i>
+                        <span class="align-middle ms-2">Back</span>
+                      </a>
+                    </div>
+                    <div class="d-grid col-md-6">
+                      <a href="booking-details.html" class="btn btn-primary">
+                        <span class="align-middle me-2">Procced Check Out</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </form>

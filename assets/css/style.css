@@ -381,6 +381,9 @@
   .divider-text img {
     width: 70%;
   }
+  .payment img {
+    width: 40%;
+  }
 }
 
 .img-testimoni {
@@ -475,7 +478,7 @@
 }
 
 .custom-radio-button:hover {
-  background-color: #efefef;
+  background-color: #fafafa;
 }
 
 .custom-radio-button__container input[type="radio"]:checked + .custom-radio-button {
