@@ -228,6 +228,18 @@
   width: 100%;
 }
 
+#heroTextPackages {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+  z-index: 2;
+  width: 80%;
+}
+
 #carouselHero {
   position: relative;
 }
@@ -483,4 +495,27 @@
 
 .custom-radio-button__container input[type="radio"]:checked + .custom-radio-button {
   border: 1px solid #810000;
+}
+
+.card-scroll {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  background-color: var(--bs-card-bg);
+  background-clip: border-box;
+  height: auto;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .main-section {
+    margin-top: 60px;
+  }
+}
+
+@media (max-width: 767px) {
+  .main-section {
+    margin-top: 30px;
+  }
 }

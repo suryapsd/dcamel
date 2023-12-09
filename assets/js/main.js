@@ -1,25 +1,24 @@
-// Use event delegation to handle the click event for "return"
 $(document).on("click", "#return-option", function () {
-  console.log("Return option clicked");
   $("#oneway-option").removeClass("active");
 
-  // Toggle kelas "active" pada tombol "return"
   $(this).toggleClass("active");
 
-  // Ambil elemen input
   var returnDateInput = $("#return-date");
   var openCheck = $("#openCheck");
 
-  // Hapus atribut "disabled" jika tombol "return" aktif, tambahkan jika tidak
   if ($(this).hasClass("active")) {
     returnDateInput.removeAttr("disabled");
     openCheck.removeAttr("disabled");
   }
 });
 
-// Use event delegation to handle the click event for "oneway"
+$(document).on("click", "#openCheck", function () {
+  $("#return-option").removeClass("active");
+  $(this).toggleClass("active");
+  $("#return-date").prop("disabled", true);
+});
+
 $(document).on("click", "#oneway-option", function () {
-  console.log("Oneway option clicked");
   $("#return-option").removeClass("active");
   $(this).toggleClass("active");
   $("#return-date").prop("disabled", true);
@@ -208,3 +207,41 @@ $(document).on("click", "#oneway-option", function () {
     return new bootstrap.Tooltip(tooltipTriggerEl);
   });
 })();
+
+/**
+ * Perfect Scrollbar
+ */
+("use strict");
+
+document.addEventListener("DOMContentLoaded", function () {
+  (function () {
+    const verticalExample = document.getElementById("vertical-example"),
+      horizontalExample = document.getElementById("horizontal-example"),
+      horizVertExample = document.getElementById("both-scrollbars-example");
+
+    // Vertical Example
+    // --------------------------------------------------------------------
+    if (verticalExample) {
+      new PerfectScrollbar(verticalExample, {
+        wheelPropagation: false,
+      });
+    }
+
+    // Horizontal Example
+    // --------------------------------------------------------------------
+    if (horizontalExample) {
+      new PerfectScrollbar(horizontalExample, {
+        wheelPropagation: false,
+        suppressScrollY: true,
+      });
+    }
+
+    // Both vertical and Horizontal Example
+    // --------------------------------------------------------------------
+    if (horizVertExample) {
+      new PerfectScrollbar(horizVertExample, {
+        wheelPropagation: false,
+      });
+    }
+  })();
+});

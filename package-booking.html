@@ -24,7 +24,6 @@
     <!-- Core CSS -->
     <link rel="stylesheet" href="./assets/vendor/css/rtl/core.css" class="template-customizer-core-css" />
     <link rel="stylesheet" href="./assets/vendor/css/rtl/theme-bordered.css" class="template-customizer-theme-css" />
-    <link rel="stylesheet" href="./assets/css/demo.css" />
 
     <!-- Vendors CSS -->
     <link rel="stylesheet" href="./assets/css/owl.carousel.min.css" />
@@ -45,6 +44,9 @@
   </head>
 
   <body class="bg-white">
+    <!-- ===============================================-->
+    <!--    Navbar   -->
+    <!-- ===============================================-->
     <nav class="navbar navbar-expand-lg bg-white fixed-top">
       <div class="container">
         <div class="navbar-nav-right d-flex align-items-center">
@@ -93,11 +95,14 @@
       </div>
     </nav>
 
+    <!-- ===============================================-->
+    <!--    Main Section   -->
+    <!-- ===============================================-->
     <section>
-      <div class="container pt-5" style="margin-top: 60px">
+      <div class="container main-section pt-5">
         <h3 class="fw-bold"><span class="border-primary border-bottom pb-2">Boat Booking</span></h3>
         <p class="pb-4">Effortless online booking, turning your aquatic adventure into a celebration!</p>
-        <!-- Default Wizard -->
+        <!--    Progress   -->
         <div class="col-12 mb-4">
           <div class="bs-stepper wizard-numbered mt-2">
             <div class="bs-stepper-header">
@@ -159,92 +164,101 @@
                 </button>
               </div>
             </div>
-            <form action="">
-              <!-- Search Boat Ticket -->
-              <div class="m-4">
-                <div class="content-header mb-3">
-                  <h5 class="mb-0">Booking Details</h5>
-                </div>
-                <div class="row">
-                  <div class="col-md-8">
+
+            <!-- ===============================================-->
+            <!--    Booking Details Section   -->
+            <!-- ===============================================-->
+            <div class="m-4">
+              <div class="content-header mb-3">
+                <h5 class="mb-0">Booking Details</h5>
+              </div>
+              <div class="row">
+                <div class="col-md-8">
+                  <form>
+                    <!-- ===============================================-->
+                    <!--    Booked By Section   -->
+                    <!-- ===============================================-->
                     <div class="card overflow-hidden p-0">
                       <div class="col bg-light d-flex justify-between align-items-center px-4">
                         <h6 class="m-0 py-3">Booked By</h6>
                       </div>
-                      <form>
-                        <div class="m-4">
-                          <div class="row mb-3">
-                            <label class="col-sm-4 col-form-label pb-0" for="basic-default-name">Name</label>
-                            <div class="col-sm-4">
-                              <input type="text" class="form-control" id="basic-default-name" placeholder="First Name" />
-                            </div>
-                            <div class="col-sm-4">
-                              <input type="text" class="form-control" id="basic-default-name" placeholder="Last Name" />
-                            </div>
+                      <div class="m-4">
+                        <div class="row mb-3">
+                          <label class="col-sm-4 col-form-label pb-0" for="first_name">Name</label>
+                          <div class="col-sm-4">
+                            <input type="text" class="form-control" id="first_name" name="first_name" placeholder="First Name" />
                           </div>
-                          <div class="row mb-3">
-                            <label class="col-sm-4 col-form-label pb-0" for="basic-default-company">Email</label>
-                            <div class="col-sm-8">
-                              <input type="email" class="form-control" id="basic-default-company" placeholder="Email Address" />
-                            </div>
+                          <div class="col-sm-4">
+                            <input type="text" class="form-control" id="last_name" name="last_name" placeholder="Last Name" />
                           </div>
-                          <div class="row mb-3">
-                            <label class="col-sm-4 col-form-label pb-0" for="basic-default-company">Retype Email Address</label>
-                            <div class="col-sm-8">
-                              <input type="email" class="form-control" id="basic-default-company" placeholder="Email Address" />
-                            </div>
+                        </div>
+                        <div class="row mb-3">
+                          <label class="col-sm-4 col-form-label pb-0" for="email">Email</label>
+                          <div class="col-sm-8">
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Email Address" />
                           </div>
-                          <div class="row mb-3">
-                            <label class="col-sm-4 col-form-label pb-0" for="basic-default-company">Phone / Mobile</label>
-                            <div class="col-sm-8">
-                              <input type="text" class="form-control" id="basic-default-company" placeholder="Phone / Mobile Number" />
-                            </div>
+                        </div>
+                        <div class="row mb-3">
+                          <label class="col-sm-4 col-form-label pb-0" for="retype_email">Retype Email Address</label>
+                          <div class="col-sm-8">
+                            <input type="email" class="form-control" id="retype_email" name="retype_email" placeholder="Email Address" />
                           </div>
-                          <div class="row mb-3">
-                            <label class="col-sm-4 col-form-label pb-0" for="basic-default-message">Country</label>
-                            <div class="col-sm-8">
-                              <select id="multicol-country" class="form-select">
-                                <option value="">Select</option>
-                                <option value="Australia">Australia</option>
-                                <option value="Bangladesh">Bangladesh</option>
-                                <option value="Belarus">Belarus</option>
-                                <option value="Brazil">Brazil</option>
-                                <option value="Canada">Canada</option>
-                                <option value="China">China</option>
-                                <option value="France">France</option>
-                                <option value="Germany">Germany</option>
-                                <option value="India">India</option>
-                                <option value="Indonesia">Indonesia</option>
-                                <option value="Israel">Israel</option>
-                                <option value="Italy">Italy</option>
-                                <option value="Japan">Japan</option>
-                                <option value="Korea">Korea, Republic of</option>
-                                <option value="Mexico">Mexico</option>
-                                <option value="Philippines">Philippines</option>
-                                <option value="Russia">Russian Federation</option>
-                                <option value="South Africa">South Africa</option>
-                                <option value="Thailand">Thailand</option>
-                                <option value="Turkey">Turkey</option>
-                                <option value="Ukraine">Ukraine</option>
-                                <option value="United Arab Emirates">United Arab Emirates</option>
-                                <option value="United Kingdom">United Kingdom</option>
-                                <option value="United States">United States</option>
-                              </select>
-                            </div>
+                        </div>
+                        <div class="row mb-3">
+                          <label class="col-sm-4 col-form-label pb-0" for="phone">Phone / Mobile</label>
+                          <div class="col-sm-8">
+                            <input type="text" class="form-control" id="phone" name="phone" placeholder="Phone / Mobile Number" />
                           </div>
-                          <div class="row justify-content-end">
-                            <div class="col-sm-8">
-                              <p class="m-0">Or, connect using your Facebook or Google+</p>
-                              <div class="demo-inline-spacing">
-                                <button type="button" class="btn btn-facebook"><i class="tf-icons ti ti-brand-facebook ti-xs me-1"></i> Facebook</button>
-                                <button type="button" class="btn btn-google-plus"><i class="tf-icons ti ti-brand-google ti-xs me-1"></i> Google+</button>
-                              </div>
+                        </div>
+                        <div class="row mb-3">
+                          <label class="col-sm-4 col-form-label pb-0" for="country">Country</label>
+                          <div class="col-sm-8">
+                            <select id="country" name="country" class="form-select">
+                              <option value="">Select</option>
+                              <option value="Australia">Australia</option>
+                              <option value="Bangladesh">Bangladesh</option>
+                              <option value="Belarus">Belarus</option>
+                              <option value="Brazil">Brazil</option>
+                              <option value="Canada">Canada</option>
+                              <option value="China">China</option>
+                              <option value="France">France</option>
+                              <option value="Germany">Germany</option>
+                              <option value="India">India</option>
+                              <option value="Indonesia">Indonesia</option>
+                              <option value="Israel">Israel</option>
+                              <option value="Italy">Italy</option>
+                              <option value="Japan">Japan</option>
+                              <option value="Korea">Korea, Republic of</option>
+                              <option value="Mexico">Mexico</option>
+                              <option value="Philippines">Philippines</option>
+                              <option value="Russia">Russian Federation</option>
+                              <option value="South Africa">South Africa</option>
+                              <option value="Thailand">Thailand</option>
+                              <option value="Turkey">Turkey</option>
+                              <option value="Ukraine">Ukraine</option>
+                              <option value="United Arab Emirates">United Arab Emirates</option>
+                              <option value="United Kingdom">United Kingdom</option>
+                              <option value="United States">United States</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="row justify-content-end">
+                          <div class="col-sm-8">
+                            <p class="m-0">Or, connect using your Facebook or Google+</p>
+                            <div class="demo-inline-spacing">
+                              <button type="button" class="btn btn-facebook"><i class="tf-icons ti ti-brand-facebook ti-xs me-1"></i> Facebook</button>
+                              <button type="button" class="btn btn-google-plus"><i class="tf-icons ti ti-brand-google ti-xs me-1"></i> Google+</button>
                             </div>
                           </div>
                         </div>
-                      </form>
+                      </div>
+
                       <hr class="m-0" />
                     </div>
+
+                    <!-- ===============================================-->
+                    <!--    Passenger (s) Section   -->
+                    <!-- ===============================================-->
                     <h5 class="mt-4 m-0">Passenger(s)</h5>
                     <div class="card overflow-hiddenp-0 mt-2">
                       <div class="col bg-light d-flex justify-between align-items-center px-4">
@@ -256,19 +270,19 @@
                             <h6 class="m-0">Passenger 1</h6>
                             <hr class="m-0 mb-3" />
                             <div class="row mb-3">
-                              <label class="col-sm-4 col-form-label pb-0" for="basic-default-name">Name</label>
+                              <label class="col-sm-4 col-form-label pb-0" for="inputs[0][first_name]">Name</label>
                               <div class="col-sm-4">
-                                <input type="text" class="form-control" id="basic-default-name" placeholder="First Name" />
+                                <input type="text" class="form-control" id="inputs[0][first_name]" name="inputs[0][first_name]" placeholder="First Name" />
                               </div>
-                              <div class="col-sm-4">
-                                <input type="text" class="form-control" id="basic-default-name" placeholder="Last Name" />
+                              <div class="col-sm-4 mt-2 mt-md-0">
+                                <input type="text" class="form-control" id="inputs[0][last_name]" name="inputs[0][last_name]" placeholder="Last Name" />
                               </div>
                             </div>
                             <div class="row mb-3">
-                              <label class="col-sm-4 col-form-label pb-0" for="basic-default-message">Country</label>
+                              <label class="col-sm-4 col-form-label pb-0" for="inputs[0][country]">Country</label>
                               <div class="col-sm-8">
-                                <select id="multicol-country" class="form-select">
-                                  <option value="">Select</option>
+                                <select id="inputs[0][country]" name="inputs[0][country]" class="form-select">
+                                  <option value="">Select country</option>
                                   <option value="Australia">Australia</option>
                                   <option value="Bangladesh">Bangladesh</option>
                                   <option value="Belarus">Belarus</option>
@@ -297,21 +311,21 @@
                               </div>
                             </div>
                             <div class="row mb-3">
-                              <label class="col-sm-4 col-form-label pb-0" for="basic-default-company">Age</label>
+                              <label class="col-sm-4 col-form-label pb-0" for="inputs[0][age]">Age</label>
                               <div class="col-sm-8">
-                                <input type="number" class="form-control" id="basic-default-company" placeholder="Age" />
+                                <input type="number" class="form-control" id="inputs[0][age]" name="inputs[0][age]" placeholder="Age" />
                               </div>
                             </div>
                             <div class="row mb-3">
-                              <label class="col-sm-4 col-form-label pb-0" for="basic-default-company">Age</label>
+                              <label class="col-sm-4 col-form-label pb-0" for="maleRadio[0]">Gender</label>
                               <div class="d-flex align-items-center col-sm-8">
                                 <div class="form-check me-3">
-                                  <input name="default-radio-1" class="form-check-input" type="radio" value="" id="defaultRadio1" />
-                                  <label class="form-check-label" for="defaultRadio1"> Male </label>
+                                  <input name="inputs[0][gender]" class="form-check-input" type="radio" value="male" id="maleRadio[0]" />
+                                  <label class="form-check-label" for="maleRadio[0]"> Male </label>
                                 </div>
                                 <div class="form-check">
-                                  <input name="default-radio-1" class="form-check-input" type="radio" value="" id="defaultRadio1" />
-                                  <label class="form-check-label" for="defaultRadio1"> Female </label>
+                                  <input name="inputs[0][gender]" class="form-check-input" type="radio" value="female" id="femaleRadio[0]" />
+                                  <label class="form-check-label" for="femaleRadio[0]"> Female </label>
                                 </div>
                               </div>
                             </div>
@@ -320,19 +334,19 @@
                             <h6 class="m-0">Passenger 2</h6>
                             <hr class="m-0 mb-3" />
                             <div class="row mb-3">
-                              <label class="col-sm-4 col-form-label pb-0" for="basic-default-name">Name</label>
+                              <label class="col-sm-4 col-form-label pb-0" for="inputs[1][first_name]">Name</label>
                               <div class="col-sm-4">
-                                <input type="text" class="form-control" id="basic-default-name" placeholder="First Name" />
+                                <input type="text" class="form-control" id="inputs[1][first_name]" name="inputs[1][first_name]" placeholder="First Name" />
                               </div>
-                              <div class="col-sm-4">
-                                <input type="text" class="form-control" id="basic-default-name" placeholder="Last Name" />
+                              <div class="col-sm-4 mt-2 mt-md-0">
+                                <input type="text" class="form-control" id="inputs[1][last_name]" name="inputs[1][last_name]" placeholder="Last Name" />
                               </div>
                             </div>
                             <div class="row mb-3">
-                              <label class="col-sm-4 col-form-label pb-0" for="basic-default-message">Country</label>
+                              <label class="col-sm-4 col-form-label pb-0" for="inputs[1][country]">Country</label>
                               <div class="col-sm-8">
-                                <select id="multicol-country" class="form-select">
-                                  <option value="">Select</option>
+                                <select id="inputs[1][country]" name="inputs[1][country]" class="form-select">
+                                  <option value="">Select country</option>
                                   <option value="Australia">Australia</option>
                                   <option value="Bangladesh">Bangladesh</option>
                                   <option value="Belarus">Belarus</option>
@@ -361,21 +375,21 @@
                               </div>
                             </div>
                             <div class="row mb-3">
-                              <label class="col-sm-4 col-form-label pb-0" for="basic-default-company">Age</label>
+                              <label class="col-sm-4 col-form-label pb-0" for="inputs[1][age]">Age</label>
                               <div class="col-sm-8">
-                                <input type="number" class="form-control" id="basic-default-company" placeholder="Age" />
+                                <input type="number" class="form-control" id="inputs[1][age]" name="inputs[1][age]" placeholder="Age" />
                               </div>
                             </div>
                             <div class="row mb-3">
-                              <label class="col-sm-4 col-form-label pb-0" for="basic-default-company">Age</label>
+                              <label class="col-sm-4 col-form-label pb-0" for="maleRadio[1]">Gender</label>
                               <div class="d-flex align-items-center col-sm-8">
                                 <div class="form-check me-3">
-                                  <input name="default-radio-1" class="form-check-input" type="radio" value="" id="defaultRadio1" />
-                                  <label class="form-check-label" for="defaultRadio1"> Male </label>
+                                  <input name="inputs[1][gender]" class="form-check-input" type="radio" value="male" id="maleRadio[1]" />
+                                  <label class="form-check-label" for="maleRadio[1]"> Male </label>
                                 </div>
                                 <div class="form-check">
-                                  <input name="default-radio-1" class="form-check-input" type="radio" value="" id="defaultRadio1" />
-                                  <label class="form-check-label" for="defaultRadio1"> Female </label>
+                                  <input name="inputs[1][gender]" class="form-check-input" type="radio" value="female" id="femaleRadio[1]" />
+                                  <label class="form-check-label" for="femaleRadio[1]"> Female </label>
                                 </div>
                               </div>
                             </div>
@@ -384,22 +398,20 @@
                       </form>
                       <hr class="m-0" />
                     </div>
+
+                    <!-- ===============================================-->
+                    <!--    Payment Section   -->
+                    <!-- ===============================================-->
                     <h5 class="mt-4 m-0">Payment</h5>
                     <div class="card overflow-hiddenp-0 mt-2">
                       <div class="m-4">
                         <div class="row mb-3">
-                          <label class="col-sm-4 col-form-label pb-0" for="basic-default-message">Select Payment Type</label>
+                          <label class="col-sm-4 col-form-label pb-0" for="payment">Select Payment Type</label>
                           <div class="col-sm-8">
-                            <select id="multicol-country" class="form-select">
+                            <select id="payment" name="payment" class="form-select">
                               <option value="">Select Payment Type</option>
-                              <option value="Australia">Australia</option>
-                              <option value="Bangladesh">Bangladesh</option>
-                              <option value="Belarus">Belarus</option>
-                              <option value="Brazil">Brazil</option>
-                              <option value="Canada">Canada</option>
-                              <option value="China">China</option>
-                              <option value="France">France</option>
-                              <option value="Germany">Germany</option>
+                              <option value="Credit Card">Credit Card</option>
+                              <option value="OVO">OVO</option>
                             </select>
                             <div class="d-flex gap-3 mt-2 payment">
                               <img class="img-fluid" src="./assets/img/image 7.png" alt="" />
@@ -412,8 +424,8 @@
                     </div>
                     <div class="col card p-4 mt-4">
                       <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" />
-                        <label class="form-check-label m-0 mb-3" for="defaultCheck1">I agree to the <a href="">Terms And Conditions</a></label>
+                        <input class="form-check-input" type="checkbox" value="" id="terms_and_conditions" name="terms_and_conditions" />
+                        <label class="form-check-label m-0 mb-3" for="terms_and_conditions">I agree to the <a href="">Terms And Conditions</a></label>
                       </div>
                       <div class="row">
                         <div class="col-md-6 order-last order-md-first mt-2 mt-md-0">
@@ -424,65 +436,68 @@
                         </div>
                         <div class="d-grid col-md-6">
                           <button class="btn btn-primary">
-                            <span class="align-middle me-2">Procced Check Out</span>
+                            <span class="align-middle me-2">Procced to Payment</span>
                             <i class="fa-solid fa-arrow-right"></i>
                           </button>
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="col-md-4 order-first order-md-last">
-                    <div class="card bg-primary p-3 mb-md-0 mb-4">
-                      <h6 class="text-white fw-normal m-0">ONE DAY TRIP FULL ACTIVITIES</h6>
-                      <small class="text-white m-0">28 November 2023</small>
-                      <div class="d-flex justify-content-between mt-2">
-                        <div>
-                          <small class="text-white fw-normal m-0">1 <span>Child</span></small>
-                        </div>
-                        <p class="text-white text-end m-0"><small class="fw-normal">IDR</small> 300.000</p>
+                  </form>
+                </div>
+                <div class="col-md-4 order-first order-md-last">
+                  <div class="card bg-primary p-3 mb-md-0 mb-4">
+                    <h6 class="text-white fw-normal m-0">ONE DAY TRIP FULL ACTIVITIES</h6>
+                    <small class="text-white m-0">28 November 2023</small>
+                    <div class="d-flex justify-content-between mt-2">
+                      <div>
+                        <small class="text-white fw-normal m-0">1 <span>Child</span></small>
                       </div>
-                      <div class="d-flex justify-content-between">
-                        <div>
-                          <small class="text-white fw-normal m-0">1 <span>Adult</span></small>
-                        </div>
-                        <p class="text-white text-end m-0"><small class="fw-normal">IDR</small> 300.000</p>
+                      <p class="text-white text-end m-0"><small class="fw-normal">IDR</small> 300.000</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <div>
+                        <small class="text-white fw-normal m-0">1 <span>Adult</span></small>
                       </div>
-                      <div class="d-flex justify-content-between">
-                        <div>
-                          <small class="text-white fw-normal m-0">Extra Charge (Pick Up & Drop)</small>
-                        </div>
-                        <p class="text-white text-end m-0"><small class="fw-normal">IDR</small> 300.000</p>
+                      <p class="text-white text-end m-0"><small class="fw-normal">IDR</small> 300.000</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <div>
+                        <small class="text-white fw-normal m-0">Extra Charge (Pick Up & Drop)</small>
                       </div>
-                      <hr class="bg-light" />
-                      <div class="d-flex justify-content-between">
-                        <div>
-                          <small class="text-white fw-normal m-0">Sub Total:</small>
-                        </div>
-                        <p class="text-white text-end m-0"><small class="fw-normal">IDR</small> 300.000</p>
+                      <p class="text-white text-end m-0"><small class="fw-normal">IDR</small> 300.000</p>
+                    </div>
+                    <hr class="bg-light" />
+                    <div class="d-flex justify-content-between">
+                      <div>
+                        <small class="text-white fw-normal m-0">Sub Total:</small>
                       </div>
-                      <div class="d-flex justify-content-between">
-                        <div>
-                          <small class="text-white fw-normal m-0">Discount</small>
-                        </div>
-                        <p class="text-white text-end m-0"><small class="fw-normal">IDR</small> 200.000</p>
+                      <p class="text-white text-end m-0"><small class="fw-normal">IDR</small> 300.000</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <div>
+                        <small class="text-white fw-normal m-0">Discount</small>
                       </div>
-                      <hr class="bg-light" />
-                      <div class="d-flex justify-content-between">
-                        <div>
-                          <small class="text-white fw-normal m-0">Grand Total:</small>
-                        </div>
-                        <h5 class="text-white text-end m-0"><small class="fw-normal">IDR</small> 300.000</h5>
+                      <p class="text-white text-end m-0"><small class="fw-normal">IDR</small> 200.000</p>
+                    </div>
+                    <hr class="bg-light" />
+                    <div class="d-flex justify-content-between">
+                      <div>
+                        <small class="text-white fw-normal m-0">Grand Total:</small>
                       </div>
+                      <h5 class="text-white text-end m-0"><small class="fw-normal">IDR</small> 300.000</h5>
                     </div>
                   </div>
                 </div>
               </div>
-            </form>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- ===============================================-->
+    <!--    Footer   -->
+    <!-- ===============================================-->
     <footer class="footer bg-light">
       <div class="container container-p-x pt-5 pb-4">
         <div class="row">
