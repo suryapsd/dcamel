@@ -3,7 +3,7 @@ $(document).on("click", "#return-option", function () {
 
   $(this).toggleClass("active");
 
-  var returnDateInput = $("#return-date");
+  var returnDateInput = $("#return_date");
   var openCheck = $("#openCheck");
 
   if ($(this).hasClass("active")) {
@@ -15,13 +15,13 @@ $(document).on("click", "#return-option", function () {
 $(document).on("click", "#openCheck", function () {
   $("#return-option").removeClass("active");
   $(this).toggleClass("active");
-  $("#return-date").prop("disabled", true);
+  $("#return_date").prop("disabled", true);
 });
 
 $(document).on("click", "#oneway-option", function () {
   $("#return-option").removeClass("active");
   $(this).toggleClass("active");
-  $("#return-date").prop("disabled", true);
+  $("#return_date").prop("disabled", true);
 });
 
 (function ($) {
@@ -127,7 +127,7 @@ $(document).on("click", "#oneway-option", function () {
   // Flat Picker
   // --------------------------------------------------------------------
   const fromDate = document.querySelector("#departure-date"),
-    toDate = document.querySelector("#return-date");
+    toDate = document.querySelector("#return_date");
 
   // Date
   // if (fromDate) {
