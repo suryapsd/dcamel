@@ -101,7 +101,7 @@
         <!--    Progress   -->
         <div class="col-12 mb-4">
           <div class="bs-stepper wizard-numbered mt-2">
-            <div class="bs-stepper-header">
+            <div class="bs-stepper-header d-flex justify-content-between">
               <div class="step">
                 <button type="button" class="step-trigger">
                   <span class="bs-stepper-circle text-primary">1</span>
@@ -116,19 +116,7 @@
               </div>
               <div class="step">
                 <button type="button" class="step-trigger">
-                  <span class="bs-stepper-circle text-primary">2</span>
-                  <span class="bs-stepper-label">
-                    <span class="bs-stepper-title">Shopping Cart</span>
-                    <span class="bs-stepper-subtitle">See your Setup Trip</span>
-                  </span>
-                </button>
-              </div>
-              <div class="line">
-                <i class="ti ti-chevron-right"></i>
-              </div>
-              <div class="step">
-                <button type="button" class="step-trigger">
-                  <span class="bs-stepper-circle bg-primary text-white">3</span>
+                  <span class="bs-stepper-circle bg-primary text-white">2</span>
                   <span class="bs-stepper-label">
                     <span class="bs-stepper-title">Booking Details</span>
                     <span class="bs-stepper-subtitle">See your booking</span>
@@ -140,7 +128,7 @@
               </div>
               <div class="step">
                 <button type="button" class="step-trigger">
-                  <span class="bs-stepper-circle">4</span>
+                  <span class="bs-stepper-circle">3</span>
                   <span class="bs-stepper-label">
                     <span class="bs-stepper-title">Payment</span>
                     <span class="bs-stepper-subtitle">Pay for your trip</span>
@@ -152,7 +140,7 @@
               </div>
               <div class="step">
                 <button type="button" class="step-trigger">
-                  <span class="bs-stepper-circle">5</span>
+                  <span class="bs-stepper-circle">4</span>
                   <span class="bs-stepper-label">
                     <span class="bs-stepper-title">Finish</span>
                     <span class="bs-stepper-subtitle">Enjoy your trip</span>
@@ -179,7 +167,7 @@
                         <h6 class="m-0 py-3">Booked By</h6>
                       </div>
                       <div class="m-3 m-md-4">
-                        <div class="row mb-3">
+                        <div class="row mb-2">
                           <label class="col-sm-4 col-form-label pb-0" for="first_name">Name</label>
                           <div class="col-sm-4">
                             <input type="text" class="form-control" id="first_name" name="first_name" placeholder="First Name" />
@@ -188,25 +176,25 @@
                             <input type="text" class="form-control" id="last_name" name="last_name" placeholder="Last Name" />
                           </div>
                         </div>
-                        <div class="row mb-3">
+                        <div class="row mb-2">
                           <label class="col-sm-4 col-form-label pb-0" for="email">Email</label>
                           <div class="col-sm-8">
                             <input type="email" class="form-control" id="email" name="email" placeholder="Email Address" />
                           </div>
                         </div>
-                        <div class="row mb-3">
+                        <div class="row mb-2">
                           <label class="col-sm-4 col-form-label pb-0" for="retype_email">Retype Email Address</label>
                           <div class="col-sm-8">
                             <input type="email" class="form-control" id="retype_email" name="retype_email" placeholder="Email Address" />
                           </div>
                         </div>
-                        <div class="row mb-3">
+                        <div class="row mb-2">
                           <label class="col-sm-4 col-form-label pb-0" for="phone">Phone / Mobile</label>
                           <div class="col-sm-8">
                             <input type="text" class="form-control" id="phone" name="phone" placeholder="Phone / Mobile Number" />
                           </div>
                         </div>
-                        <div class="row mb-3">
+                        <div class="row mb-2">
                           <label class="col-sm-4 col-form-label pb-0" for="country">Country</label>
                           <div class="col-sm-8">
                             <select id="country" name="country" class="form-select">
@@ -263,7 +251,7 @@
                           <div>
                             <h6 class="m-0">Passenger 1</h6>
                             <hr class="m-0 mb-3" />
-                            <div class="row mb-3">
+                            <div class="row mb-2">
                               <label class="col-sm-4 col-form-label pb-0" for="inputs[0][first_name]">Name</label>
                               <div class="col-sm-4">
                                 <input type="text" class="form-control" id="inputs[0][first_name]" name="inputs[0][first_name]" placeholder="First Name" />
@@ -272,7 +260,7 @@
                                 <input type="text" class="form-control" id="inputs[0][last_name]" name="inputs[0][last_name]" placeholder="Last Name" />
                               </div>
                             </div>
-                            <div class="row mb-3">
+                            <div class="row mb-2">
                               <label class="col-sm-4 col-form-label pb-0" for="inputs[0][country]">Country</label>
                               <div class="col-sm-8">
                                 <select id="inputs[0][country]" name="inputs[0][country]" class="form-select">
@@ -304,13 +292,13 @@
                                 </select>
                               </div>
                             </div>
-                            <div class="row mb-3">
+                            <div class="row mb-2">
                               <label class="col-sm-4 col-form-label pb-0" for="inputs[0][age]">Age</label>
                               <div class="col-sm-8">
                                 <input type="number" class="form-control" id="inputs[0][age]" name="inputs[0][age]" placeholder="Age" />
                               </div>
                             </div>
-                            <div class="row mb-3">
+                            <div class="row mb-2">
                               <label class="col-sm-4 col-form-label pb-0" for="maleRadio[0]">Gender</label>
                               <div class="d-flex align-items-center col-sm-8">
                                 <div class="form-check me-3">
@@ -327,7 +315,7 @@
                           <div>
                             <h6 class="m-0">Passenger 2</h6>
                             <hr class="m-0 mb-3" />
-                            <div class="row mb-3">
+                            <div class="row mb-2">
                               <label class="col-sm-4 col-form-label pb-0" for="inputs[1][first_name]">Name</label>
                               <div class="col-sm-4">
                                 <input type="text" class="form-control" id="inputs[1][first_name]" name="inputs[1][first_name]" placeholder="First Name" />
@@ -336,7 +324,7 @@
                                 <input type="text" class="form-control" id="inputs[1][last_name]" name="inputs[1][last_name]" placeholder="Last Name" />
                               </div>
                             </div>
-                            <div class="row mb-3">
+                            <div class="row mb-2">
                               <label class="col-sm-4 col-form-label pb-0" for="inputs[1][country]">Country</label>
                               <div class="col-sm-8">
                                 <select id="inputs[1][country]" name="inputs[1][country]" class="form-select">
@@ -368,13 +356,13 @@
                                 </select>
                               </div>
                             </div>
-                            <div class="row mb-3">
+                            <div class="row mb-2">
                               <label class="col-sm-4 col-form-label pb-0" for="inputs[1][age]">Age</label>
                               <div class="col-sm-8">
                                 <input type="number" class="form-control" id="inputs[1][age]" name="inputs[1][age]" placeholder="Age" />
                               </div>
                             </div>
-                            <div class="row mb-3">
+                            <div class="row mb-2">
                               <label class="col-sm-4 col-form-label pb-0" for="maleRadio[1]">Gender</label>
                               <div class="d-flex align-items-center col-sm-8">
                                 <div class="form-check me-3">
@@ -398,7 +386,7 @@
                     <h5 class="mt-4 m-0">Payment</h5>
                     <div class="card overflow-hiddenp-0 mt-2">
                       <div class="m-3 m-md-4">
-                        <div class="row mb-3">
+                        <div class="row mb-2">
                           <label class="col-sm-4 col-form-label pb-0" for="payment">Select Payment Type</label>
                           <div class="col-sm-8">
                             <select id="payment" name="payment" class="form-select">
