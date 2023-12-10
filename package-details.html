@@ -107,7 +107,7 @@
         <!-- Progress -->
         <div class="col-12 mb-4">
           <div class="bs-stepper wizard-numbered mt-2">
-            <div class="bs-stepper-header">
+            <div class="bs-stepper-header d-flex justify-content-between">
               <div class="step">
                 <button type="button" class="step-trigger">
                   <span class="bs-stepper-circle bg-primary text-white">1</span>
@@ -274,7 +274,7 @@
                         </div>
                       </div>
                       <div class="row d-flex align-items-center mb-3">
-                        <label class="col-sm-1 col-form-label pb-0" for="adult">Adult</label>
+                        <label class="col-sm-1 col-form-label pb-0" for="child">Child</label>
                         <div class="col-sm-3">
                           <p class="m-0 text-muted">
                             <small><del>IDR 500.000</del></small>
@@ -282,7 +282,7 @@
                           <h5 class="m-0"><small class="fw-normal">IDR</small> 1.100.000/Person</h5>
                         </div>
                         <div class="col-sm-2">
-                          <select id="adult" name="adult" class="form-select">
+                          <select id="child" name="child" class="form-select">
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
@@ -323,7 +323,7 @@
                         <div class="col-sm-4">
                           <div class="d-flex">
                             <p class="m-0">Extra Charge</p>
-                            <h5 class="col m-0 text-md-end"><small class="fw-normal">IDR</small> 1.100.000</h5>
+                            <h5 class="col m-0 text-end"><small class="fw-normal">IDR</small> 1.100.000</h5>
                           </div>
                           <small>Extra charge apply if pick up area outside free cover area</small>
                         </div>
@@ -344,11 +344,11 @@
                       </div>
                       <div class="row mb-3 mt-3">
                         <div class="col-sm-4">
-                          <label class="col-form-label pb-0" for="return">Drop Off after Lembongan</label>
+                          <label class="col-form-label pb-0" for="dropoff">Drop Off after Lembongan</label>
                           <p class="m-0"><small>Drop off point uppon arrival (back from activities)</small></p>
                         </div>
                         <div class="col-sm-4">
-                          <select id="return" name="return" class="form-select">
+                          <select id="dropoff" name="dropoff" class="form-select">
                             <option value="">Select Drop Off Point</option>
                             <option value="1">1</option>
                             <option value="2">2</option>
@@ -365,18 +365,18 @@
                         <div class="col-sm-4">
                           <div class="d-flex">
                             <p class="m-0">Extra Charge</p>
-                            <h5 class="col m-0 text-md-end"><small class="fw-normal">IDR</small> 1.100.000</h5>
+                            <h5 class="col m-0 text-end"><small class="fw-normal">IDR</small> 1.100.000</h5>
                           </div>
                           <small>Extra charge apply if drop off area outside free cover area</small>
                         </div>
                       </div>
                       <div class="row mb-3">
                         <div class="col-sm-4">
-                          <label class="col-form-label pb-0" for="pickup_note">Note</label>
+                          <label class="col-form-label pb-0" for="dropoff_note">Note</label>
                           <p class="m-0"><small>Please write note box if your hotel / drop off point not on list and please confirmation by Whatsapp or E-mail</small></p>
                         </div>
                         <div class="col-sm-4">
-                          <textarea class="form-control" id="pickup_note" name="pickup_note" rows="2"></textarea>
+                          <textarea class="form-control" id="dropoff_note" name="dropoff_note" rows="2"></textarea>
                         </div>
                       </div>
                     </div>
@@ -407,9 +407,6 @@
                       </div>
                     </div>
                   </div>
-                  <!-- ===============================================-->
-                  <!--    Check Out Section   -->
-                  <!-- ===============================================-->
                 </form>
               </div>
             </div>
