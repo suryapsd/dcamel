@@ -345,7 +345,7 @@
 }
 .owl-carousel .owl-dots {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 0px;
 }
 .owl-carousel .owl-dots .owl-dot {
   width: 10px;
@@ -394,7 +394,7 @@
     width: 70%;
   }
   .payment img {
-    width: 40%;
+    width: 30%;
   }
 }
 
@@ -543,5 +543,5 @@
 
 .package-text {
   text-align: center;
-  z-index: 1; /* Atur z-index agar teks ada di atas overlay */
+  z-index: 1;
 }
