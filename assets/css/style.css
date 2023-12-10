@@ -276,7 +276,7 @@
 /* Style untuk crop image */
 .cropped-hero-image {
   width: 100%;
-  height: 100vh;
+  height: 100vh !important;
   object-fit: cover;
 }
 
@@ -523,7 +523,7 @@
 
 .package-section {
   position: relative;
-  height: 70vh;
+  height: 70vh !important;
   background-image: url("https://source.unsplash.com/random/?lembongan");
   background-size: cover;
   background-position: center;
