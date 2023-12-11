@@ -151,24 +151,24 @@ $(document).on("click", "#oneway-option", function () {
 
 ("use strict");
 
-(function () {
-  // Flat Picker
-  // --------------------------------------------------------------------
-  const fromDate = document.querySelector("#departure_date"),
-    toDate = document.querySelector("#return_date");
+// (function () {
+//   // Flat Picker
+//   // --------------------------------------------------------------------
+//   const fromDate = document.querySelector("#departure_date"),
+//     toDate = document.querySelector("#return_date");
 
-  // Date
-  if (fromDate) {
-    fromDate.flatpickr({
-      monthSelectorType: "static",
-    });
-  }
-  if (toDate) {
-    toDate.flatpickr({
-      monthSelectorType: "static",
-    });
-  }
-})();
+//   // Date
+//   if (fromDate) {
+//     fromDate.flatpickr({
+//       monthSelectorType: "static",
+//     });
+//   }
+//   if (toDate) {
+//     toDate.flatpickr({
+//       monthSelectorType: "static",
+//     });
+//   }
+// })();
 
 (function () {
   const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
