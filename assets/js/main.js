@@ -1,3 +1,17 @@
+document.addEventListener("DOMContentLoaded", function () {
+  // Simulate delay (you can remove this in a real scenario)
+  setTimeout(function () {
+    // Hide the loader
+    document.getElementById("loader").style.display = "none";
+  }, 2000); // Adjust the timeout duration as needed
+});
+
+window.addEventListener('load', function () {
+  // Hide the loader when the page is fully loaded
+  var loaderContainer = document.getElementById('loader');
+  loaderContainer.style.display = 'none';
+});
+
 $(document).on("click", "#return-option", function () {
   $("#oneway-option").removeClass("active");
 
@@ -23,6 +37,10 @@ $(document).on("click", "#oneway-option", function () {
   $(this).toggleClass("active");
   $("#return_date").prop("disabled", true);
 });
+
+/**
+ * Carousel
+ */
 
 (function ($) {
   "use strict";
@@ -126,80 +144,22 @@ $(document).on("click", "#oneway-option", function () {
 (function () {
   // Flat Picker
   // --------------------------------------------------------------------
-  const fromDate = document.querySelector("#departure-date"),
+  const fromDate = document.querySelector("#departure_date"),
     toDate = document.querySelector("#return_date");
 
   // Date
-  // if (fromDate) {
-  //   const today = new Date();
-  //   const yesterday = new Date(today);
-  //   yesterday.setDate(today.getDate() - 1);
-
-  //   fromDate.flatpickr({
-  //     altInput: true,
-  //     altFormat: "F j, Y",
-  //     dateFormat: "Y-m-d",
-  //     disable: [
-  //       {
-  //         from: yesterday.toISOString().split("T")[0],
-  //         to: today.toISOString().split("T")[0],
-  //       },
-  //     ],
-  //   });
-  // }
-
-  // if (toDate) {
-  //   const today = new Date();
-  //   const yesterday = new Date(today);
-  //   yesterday.setDate(today.getDate() - 1);
-
-  //   toDate.flatpickr({
-  //     altInput: true,
-  //     altFormat: "F j, Y",
-  //     dateFormat: "Y-m-d",
-  //     disable: [
-  //       {
-  //         from: yesterday.toISOString().split("T")[0],
-  //         to: today.toISOString().split("T")[0],
-  //       },
-  //     ],
-  //   });
-  // }
+  if (fromDate) {
+    fromDate.flatpickr({
+      monthSelectorType: 'static'
+    });
+  }
+  if (toDate) {
+    toDate.flatpickr({
+      monthSelectorType: 'static'
+    });
+  }
 })();
 
-// (function () {
-//   // Numbered Wizard
-//   // --------------------------------------------------------------------
-//   const wizardNumbered = document.querySelector(".wizard-numbered"),
-//     wizardNumberedBtnNextList = [].slice.call(wizardNumbered.querySelectorAll(".btn-next")),
-//     wizardNumberedBtnPrevList = [].slice.call(wizardNumbered.querySelectorAll(".btn-prev")),
-//     wizardNumberedBtnSubmit = wizardNumbered.querySelector(".btn-submit");
-
-//   if (typeof wizardNumbered !== undefined && wizardNumbered !== null) {
-//     const numberedStepper = new Stepper(wizardNumbered, {
-//       linear: false,
-//     });
-//     if (wizardNumberedBtnNextList) {
-//       wizardNumberedBtnNextList.forEach((wizardNumberedBtnNext) => {
-//         wizardNumberedBtnNext.addEventListener("click", (event) => {
-//           numberedStepper.next();
-//         });
-//       });
-//     }
-//     if (wizardNumberedBtnPrevList) {
-//       wizardNumberedBtnPrevList.forEach((wizardNumberedBtnPrev) => {
-//         wizardNumberedBtnPrev.addEventListener("click", (event) => {
-//           numberedStepper.previous();
-//         });
-//       });
-//     }
-//     if (wizardNumberedBtnSubmit) {
-//       wizardNumberedBtnSubmit.addEventListener("click", (event) => {
-//         alert("Submitted..!!");
-//       });
-//     }
-//   }
-// })();
 
 (function () {
   const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
