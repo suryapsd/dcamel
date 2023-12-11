@@ -1,12 +1,12 @@
 document.addEventListener("DOMContentLoaded", function () {
   setTimeout(function () {
     document.getElementById("loader").style.display = "none";
-  }, 2000); 
+  }, 2000);
 });
 
-window.addEventListener('load', function () {
-  var loaderContainer = document.getElementById('loader');
-  loaderContainer.style.display = 'none';
+window.addEventListener("load", function () {
+  var loaderContainer = document.getElementById("loader");
+  loaderContainer.style.display = "none";
 });
 
 $(document).on("click", "#return-option", function () {
@@ -16,18 +16,13 @@ $(document).on("click", "#return-option", function () {
   var returnDateInput = $("#return_date");
   var openCheck = $("#openCheck");
 
-  if ($(this).hasClass("active")) {
-    returnDateInput.removeAttr("disabled");
-    openCheck.removeAttr("disabled");
-  } else {
-    returnDateInput.prop("disabled", true);
-    openCheck.prop("checked", false); 
-  }
+  returnDateInput.removeAttr("disabled");
+  openCheck.removeAttr("disabled");
 });
 
 $(document).on("click", "#openCheck", function () {
   var returnDateInput = $("#return_date");
-  
+
   if ($(this).is(":checked")) {
     returnDateInput.prop("disabled", true);
   } else {
@@ -160,16 +155,15 @@ $(document).on("click", "#oneway-option", function () {
   // Date
   if (fromDate) {
     fromDate.flatpickr({
-      monthSelectorType: 'static'
+      monthSelectorType: "static",
     });
   }
   if (toDate) {
     toDate.flatpickr({
-      monthSelectorType: 'static'
+      monthSelectorType: "static",
     });
   }
 })();
-
 
 (function () {
   const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
