@@ -591,7 +591,7 @@
   background-color: #810000 !important;
 }
 
-.custom-radio-button__container input[type="radio"] {
+.custom-radio-button-container input[type="radio"] {
   display: none;
   width: 100%;
 }
@@ -605,11 +605,11 @@
   cursor: pointer;
 }
 
-/* .custom-radio-button:hover {
+.custom-radio-button:hover {
   background-color: #fafafa;
-} */
+}
 
-.custom-radio-button__container input[type="radio"]:checked + .custom-radio-button {
+.custom-radio-button-container input[type="radio"]:checked + .custom-radio-button {
   border: 1px solid #810000;
 }
 
