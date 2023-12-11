@@ -67,11 +67,13 @@ $(document).on("click", "#oneway-option", function () {
   if (fromDate) {
     fromDate.flatpickr({
       monthSelectorType: "static",
+      disableMobile: "true",
     });
   }
   if (toDate) {
     toDate.flatpickr({
       monthSelectorType: "static",
+      disableMobile: "true",
     });
   }
 })();
