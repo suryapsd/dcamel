@@ -592,9 +592,11 @@
 }
 
 .custom-radio-button-container input[type="radio"] {
-  display: none;
-  width: 100%;
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
 }
+
 .custom-radio-button {
   display: block;
   width: 100%;
@@ -605,9 +607,9 @@
   cursor: pointer;
 }
 
-/* .custom-radio-button:hover {
+.custom-radio-button:hover {
   background-color: #fafafa;
-} */
+}
 
 .custom-radio-button-container input[type="radio"]:checked + .custom-radio-button {
   border: 1px solid #810000;
