@@ -33,6 +33,7 @@ $(document).on("click", "#openCheck", function () {
 
   if ($(this).is(":checked")) {
     returnDateInput.prop("disabled", true);
+    returnDateInput.val("");
   } else {
     returnDateInput.removeAttr("disabled");
   }
