@@ -1,3 +1,6 @@
+/**
+ * Loader
+ */
 document.addEventListener("DOMContentLoaded", function () {
   setTimeout(function () {
     document.getElementById("loader").style.display = "none";
@@ -12,7 +15,6 @@ window.addEventListener("load", function () {
 /**
  * Form Picker
  */
-
 ("use strict");
 
 (function () {
@@ -170,6 +172,9 @@ window.addEventListener("load", function () {
   carousel3();
 })(jQuery);
 
+/**
+ * Tooltip
+ */
 (function () {
   const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
   tooltipTriggerList.map(function (tooltipTriggerEl) {
