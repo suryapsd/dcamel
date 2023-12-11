@@ -1,4 +1,4 @@
-/* Styles for the loader */
+
 .loader-container {
   position: fixed;
   top: 0;
@@ -17,7 +17,7 @@
   height: 40px;
   position: relative;
   animation: sk-chase 2.5s infinite linear both;
-  margin: auto; /* Added to center the loader */
+  margin: auto; 
 }
 
 .sk-chase-dot {
@@ -65,7 +65,7 @@
 
 
 /**************** banner part css start ****************/
-/* line 2, /Applications/MAMP/htdocs/palash/cl/july 2019/193 Travel/193 travel html/sass/_banner.scss */
+
 .banner_part {
   height: 100vh;
   position: relative;
@@ -78,7 +78,7 @@
 }
 
 @media (max-width: 575px) {
-  /* line 2, /Applications/MAMP/htdocs/palash/cl/july 2019/193 Travel/193 travel html/sass/_banner.scss */
+  
   .banner_part {
     height: 650px;
     background-color: #f0eed4;
@@ -86,7 +86,7 @@
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
-  /* line 2, /Applications/MAMP/htdocs/palash/cl/july 2019/193 Travel/193 travel html/sass/_banner.scss */
+  
   .banner_part {
     height: 650px;
     background-color: #f0eed4;
@@ -94,7 +94,7 @@
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  /* line 2, /Applications/MAMP/htdocs/palash/cl/july 2019/193 Travel/193 travel html/sass/_banner.scss */
+  
   .banner_part {
     height: 700px;
     background-color: #f0eed4;
@@ -102,28 +102,28 @@
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
-  /* line 2, /Applications/MAMP/htdocs/palash/cl/july 2019/193 Travel/193 travel html/sass/_banner.scss */
+  
   .banner_part {
     background-size: cover;
     height: 650px;
   }
 }
 
-/* line 28, /Applications/MAMP/htdocs/palash/cl/july 2019/193 Travel/193 travel html/sass/_banner.scss */
+
 .banner_part .banner_text {
   display: table;
   width: 100%;
   height: 880px;
 }
 
-/* line 32, /Applications/MAMP/htdocs/palash/cl/july 2019/193 Travel/193 travel html/sass/_banner.scss */
+
 .banner_part .banner_text .banner_text_iner {
   display: table-cell;
   vertical-align: middle;
 }
 
 @media (max-width: 575px) {
-  /* line 28, /Applications/MAMP/htdocs/palash/cl/july 2019/193 Travel/193 travel html/sass/_banner.scss */
+  
   .banner_part .banner_text {
     text-align: center;
     padding-top: 0px;
@@ -132,7 +132,7 @@
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
-  /* line 28, /Applications/MAMP/htdocs/palash/cl/july 2019/193 Travel/193 travel html/sass/_banner.scss */
+  
   .banner_part .banner_text {
     text-align: center;
     padding-top: 0px;
@@ -141,7 +141,7 @@
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  /* line 28, /Applications/MAMP/htdocs/palash/cl/july 2019/193 Travel/193 travel html/sass/_banner.scss */
+  
   .banner_part .banner_text {
     text-align: center;
     padding-top: 0px;
@@ -150,19 +150,19 @@
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
-  /* line 28, /Applications/MAMP/htdocs/palash/cl/july 2019/193 Travel/193 travel html/sass/_banner.scss */
+  
   .banner_part .banner_text {
     height: 650px;
   }
 }
 
-/* line 55, /Applications/MAMP/htdocs/palash/cl/july 2019/193 Travel/193 travel html/sass/_banner.scss */
+
 .banner_part .banner_text p {
   font-size: 24px;
   color: #fff;
 }
 
-/* line 59, /Applications/MAMP/htdocs/palash/cl/july 2019/193 Travel/193 travel html/sass/_banner.scss */
+
 .banner_part .banner_text h1 {
   font-size: 120px;
   line-height: 1;
@@ -173,7 +173,7 @@
 }
 
 @media (max-width: 575px) {
-  /* line 59, /Applications/MAMP/htdocs/palash/cl/july 2019/193 Travel/193 travel html/sass/_banner.scss */
+  
   .banner_part .banner_text h1 {
     font-size: 30px;
     margin-bottom: 15px;
@@ -182,7 +182,7 @@
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
-  /* line 59, /Applications/MAMP/htdocs/palash/cl/july 2019/193 Travel/193 travel html/sass/_banner.scss */
+  
   .banner_part .banner_text h1 {
     font-size: 40px;
     margin-bottom: 15px;
@@ -191,7 +191,7 @@
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  /* line 59, /Applications/MAMP/htdocs/palash/cl/july 2019/193 Travel/193 travel html/sass/_banner.scss */
+  
   .banner_part .banner_text h1 {
     font-size: 40px;
     margin-bottom: 15px;
@@ -200,7 +200,7 @@
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
-  /* line 59, /Applications/MAMP/htdocs/palash/cl/july 2019/193 Travel/193 travel html/sass/_banner.scss */
+  
   .banner_part .banner_text h1 {
     font-size: 40px;
     margin-bottom: 15px;
@@ -208,12 +208,12 @@
   }
 }
 
-/* line 86, /Applications/MAMP/htdocs/palash/cl/july 2019/193 Travel/193 travel html/sass/_banner.scss */
+
 .banner_part .banner_text h1 span {
   color: #fe5c24;
 }
 
-/* line 91, /Applications/MAMP/htdocs/palash/cl/july 2019/193 Travel/193 travel html/sass/_banner.scss */
+
 .banner_part .banner_text h3 {
   font-size: 48px;
   font-weight: 300;
@@ -221,27 +221,27 @@
 }
 
 @media (max-width: 575px) {
-  /* line 91, /Applications/MAMP/htdocs/palash/cl/july 2019/193 Travel/193 travel html/sass/_banner.scss */
+  
   .banner_part .banner_text h3 {
     font-size: 28px;
   }
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
-  /* line 91, /Applications/MAMP/htdocs/palash/cl/july 2019/193 Travel/193 travel html/sass/_banner.scss */
+  
   .banner_part .banner_text h3 {
     font-size: 28px;
   }
 }
 
-/* line 106, /Applications/MAMP/htdocs/palash/cl/july 2019/193 Travel/193 travel html/sass/_banner.scss */
+
 .banner_part .banner_text .btn_1 {
   margin-top: 60px;
   background-color: #2493e0;
   padding: 23px 79px;
 }
 
-/* line 110, /Applications/MAMP/htdocs/palash/cl/july 2019/193 Travel/193 travel html/sass/_banner.scss */
+
 .banner_part .banner_text .btn_1:hover {
   color: #fff;
   background-color: #fe5c24;
@@ -249,7 +249,7 @@
 
 /**************** hero part css end ****************/
 /*********** booking css start *************/
-/* line 2, /Applications/MAMP/htdocs/palash/cl/july 2019/193 Travel/193 travel html/sass/_booking.scss */
+
 .booking_part {
   margin-top: -100px;
   z-index: 9;
@@ -257,29 +257,29 @@
 }
 
 .navbar-nav .nav-link {
-  color: #333; /* Warna teks non-aktif */
-  font-weight: normal; /* Font normal untuk teks non-aktif */
+  color: #333; 
+  font-weight: normal; 
   margin: 0 10px;
 }
 
 .navbar-nav .nav-link.active,
 .navbar-nav .nav-link:hover {
-  color: #810000 !important; /* Warna teks saat aktif atau dihover, menggunakan !important untuk memastikan keutamaan */
-  font-weight: bold; /* Font medium untuk teks aktif atau dihover */
-  border-bottom: 1px solid #810000; /* Garis bawah saat aktif atau dihover */
+  color: #810000 !important; 
+  font-weight: bold; 
+  border-bottom: 1px solid #810000; 
 }
 
-/* Color for "Hotline" and social media icons */
+
 .navbar-nav .hotline,
 .navbar-nav .hotline a,
 .navbar-nav .hotline .nav-item .nav-link i {
-  color: #ff7f00; /* Orange color */
+  color: #ff7f00; 
 }
 
 .navbar-nav .hotline:hover,
 .navbar-nav .hotline a:hover,
 .navbar-nav .hotline .nav-item .nav-link i:hover {
-  color: #810000; /* Red color on hover */
+  color: #810000; 
 }
 
 #heroText {
@@ -328,7 +328,7 @@
   z-index: 1;
 }
 
-/* Menambahkan efek lapisan gelap pada gambar carousel */
+
 .carousel-hero-item::before {
   content: "";
   position: absolute;
@@ -336,10 +336,10 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* Warna lapisan gelap */
+  background: rgba(0, 0, 0, 0.5); 
 }
 
-/* Style untuk crop image */
+
 .cropped-hero-image {
   width: 100%;
   height: 100vh !important;
@@ -348,7 +348,7 @@
 
 .cropped-image {
   width: 100%;
-  height: 180px;
+  height: 150px;
   object-fit: cover;
 }
 
@@ -364,7 +364,7 @@
   object-fit: cover;
 }
 
-/* Warna tombol aktif */
+
 .custom-tabs .nav-item button.active {
   background-color: #fff; 
   color: #810000;
@@ -375,7 +375,7 @@
   outline: none;
 }
 
-/* Warna tombol tidak aktif */
+
 .custom-tabs .nav-item button:not(.active) {
   background-color: #EFEFEF; 
   color: #444444;
@@ -386,21 +386,21 @@
 .custom-tabs .nav-item button:hover,
 .custom-tabs .nav-item button:active,
 .custom-tabs .nav-item button:focus {
-  border-color: transparent !important; /* Atur warna border transparan pada hover, klik, dan fokus */
-  box-shadow: none !important; /* Hapus efek shadow pada hover, klik, dan fokus */
+  border-color: transparent !important; 
+  box-shadow: none !important; 
 }
 
-/* Custom CSS untuk membuat tombol lebar penuh di perangkat mobile */
+
 @media (max-width: 767px) {
   .custom-tabs .nav-item {
     width: 100%;
-    text-align: center; /* Mengatur teks ke tengah untuk tombol lebar penuh */
+    text-align: center; 
   }
   .custom-tabs .nav-item button {
     width: 100%;
   }
 
-  /* Mengatur lebar tombol hanya pada tab utama di luar tab-content */
+  
   .custom-tabs .nav-align-top .nav-item {
     width: auto;
   }
@@ -547,7 +547,7 @@
   height: 100%;
   border: 5px solid #ffffff;
   border-radius: 50%;
-  object-fit: cover; /* Menyesuaikan gambar ke dalam lingkaran tanpa merubah aspek rasio */
+  object-fit: cover; 
 }
 .testimonial .description {
   font-size: 15px;
