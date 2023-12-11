@@ -135,17 +135,17 @@ $(document).on("click", "#oneway-option", function () {
     $(".featured-carousel3").owlCarousel({
       loop: false,
       autoplay: false,
-      margin: 20,
+      margin: 10,
       nav: false,
       dots: true,
       autoplayHoverPause: false,
       items: 1,
       responsive: {
         0: {
-          items: 1,
+          items: 2,
         },
         600: {
-          items: 1,
+          items: 2,
         },
         1000: {
           items: 2,
