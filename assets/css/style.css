@@ -298,6 +298,49 @@
   object-fit: cover;
 }
 
+/* Warna tombol aktif */
+.custom-tabs .nav-item button.active {
+  background-color: #fff; 
+  color: #810000;
+  border-color: #ddd;
+  box-shadow: none; 
+  border-radius: 0 0 0 0; 
+
+  outline: none;
+}
+
+/* Warna tombol tidak aktif */
+.custom-tabs .nav-item button:not(.active) {
+  background-color: #EFEFEF; 
+  color: #444444;
+  border-color: #ddd; 
+  border-radius: 0 0 0 0;
+}
+
+.custom-tabs .nav-item button:hover,
+.custom-tabs .nav-item button:active,
+.custom-tabs .nav-item button:focus {
+  border-color: transparent !important; /* Atur warna border transparan pada hover, klik, dan fokus */
+  box-shadow: none !important; /* Hapus efek shadow pada hover, klik, dan fokus */
+}
+
+/* Custom CSS untuk membuat tombol lebar penuh di perangkat mobile */
+@media (max-width: 767px) {
+  .nav-align-top .nav-item {
+    width: 100%;
+  }
+  .nav-align-top .nav-item button {
+    width: 100%;
+    text-align: left; /* Tambahkan ini untuk mengatur teks ke kiri */
+  }
+}
+
+@media only screen and (max-width: 479px){
+  .tab-search .nav-tabs-search li{ width: 100%; }
+  .tab-search .nav-tabs-search li a{ margin: 0 0 10px; }
+  .tab-search .tab-content-search h3{ font-size: 18px; }
+}
+
 .owl-carousel {
   position: relative;
 }
