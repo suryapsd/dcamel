@@ -9,45 +9,70 @@ window.addEventListener("load", function () {
   loaderContainer.style.display = "none";
 });
 
-$(document).on("click", "#return-option", function () {
-  $("#oneway-option").removeClass("active");
-  $(this).toggleClass("active");
+/**
+ * Form Picker
+ */
 
-  var returnDateInput = $("#return_date");
-  var openCheck = $("#openCheck");
+("use strict");
 
-  if ($(this).hasClass("active")) {
-    returnDateInput.removeAttr("disabled");
-    openCheck.removeAttr("disabled");
-  } else {
-    returnDateInput.prop("disabled", true);
-    openCheck.prop("checked", false);
+(function () {
+  // Flat Picker
+  // --------------------------------------------------------------------
+  const fromDate = document.querySelector("#departure_date"),
+    toDate = document.querySelector("#return_date");
+
+  // Date
+  if (fromDate) {
+    fromDate.flatpickr({
+      monthSelectorType: "static",
+    });
   }
-});
-
-$(document).on("click", "#openCheck", function () {
-  var returnDateInput = $("#return_date");
-
-  if ($(this).is(":checked")) {
-    returnDateInput.prop("disabled", true);
-  } else {
-    returnDateInput.removeAttr("disabled");
+  if (toDate) {
+    toDate.flatpickr({
+      monthSelectorType: "static",
+    });
   }
-});
 
-$(document).on("click", "#oneway-option", function () {
-  $("#return-option").removeClass("active");
-  $(this).toggleClass("active");
+  $(document).on("click", "#return-option", function () {
+    $("#oneway-option").removeClass("active");
+    $(this).toggleClass("active");
 
-  var returnDateInput = $("#return_date");
-  var openCheck = $("#openCheck");
+    var returnDateInput = $("#return_date");
+    var openCheck = $("#openCheck");
 
-  if ($(this).hasClass("active")) {
-    returnDateInput.prop("disabled", true);
-    openCheck.prop("disabled", true);
-    openCheck.prop("checked", false);
-  }
-});
+    if ($(this).hasClass("active")) {
+      returnDateInput.removeAttr("disabled");
+      openCheck.removeAttr("disabled");
+    } else {
+      returnDateInput.prop("disabled", true);
+      openCheck.prop("checked", false);
+    }
+  });
+
+  $(document).on("click", "#openCheck", function () {
+    var returnDateInput = $("#return_date");
+
+    if ($(this).is(":checked")) {
+      returnDateInput.prop("disabled", true);
+    } else {
+      returnDateInput.removeAttr("disabled");
+    }
+  });
+
+  $(document).on("click", "#oneway-option", function () {
+    $("#return-option").removeClass("active");
+    $(this).toggleClass("active");
+
+    var returnDateInput = $("#return_date");
+    var openCheck = $("#openCheck");
+
+    if ($(this).hasClass("active")) {
+      returnDateInput.prop("disabled", true);
+      openCheck.prop("disabled", true);
+      openCheck.prop("checked", false);
+    }
+  });
+})();
 
 /**
  * Carousel
@@ -144,31 +169,6 @@ $(document).on("click", "#oneway-option", function () {
   carousel2();
   carousel3();
 })(jQuery);
-
-/**
- * Form Picker
- */
-
-("use strict");
-
-// (function () {
-//   // Flat Picker
-//   // --------------------------------------------------------------------
-//   const fromDate = document.querySelector("#departure_date"),
-//     toDate = document.querySelector("#return_date");
-
-//   // Date
-//   if (fromDate) {
-//     fromDate.flatpickr({
-//       monthSelectorType: "static",
-//     });
-//   }
-//   if (toDate) {
-//     toDate.flatpickr({
-//       monthSelectorType: "static",
-//     });
-//   }
-// })();
 
 (function () {
   const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
