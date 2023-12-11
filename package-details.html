@@ -22,8 +22,8 @@
     <link rel="stylesheet" href="./assets/vendor/fonts/tabler-icons.css" />
 
     <!-- Core CSS -->
-    <link rel="stylesheet" href="./assets/vendor/css/rtl/core.css" class="template-customizer-core-css" />
-    <link rel="stylesheet" href="./assets/vendor/css/rtl/theme-bordered.css" class="template-customizer-theme-css" />
+    <link rel="stylesheet" href="./assets/vendor/css/core.css" class="template-customizer-core-css" />
+    <link rel="stylesheet" href="./assets/vendor/css/theme-bordered.css" class="template-customizer-theme-css" />
 
     <!-- Vendors CSS -->
     <link rel="stylesheet" href="./assets/css/owl.carousel.min.css" />
@@ -33,7 +33,7 @@
     <link rel="stylesheet" href="./assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
     <link rel="stylesheet" href="./assets/vendor/libs/typeahead-js/typeahead.css" />
     <link rel="stylesheet" href="./assets/vendor/libs/swiper/swiper.css" />
-    <link rel="stylesheet" href="./assets/vendor/css/pages/ui-carousel.css" />
+    <link rel="stylesheet" href="./assets/vendor/css/ui-carousel.css" />
 
     <!-- style CSS -->
     <link rel="stylesheet" href="./assets/css/style.css" />
@@ -225,7 +225,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col mt-4">
+              <div class="col mt-2 mt-md-4">
                 <form>
                   <!-- ===============================================-->
                   <!--    Reserve Section   -->
@@ -298,7 +298,7 @@
                       <div class="row mb-2">
                         <div class="col-sm-4">
                           <label class="col-form-label pb-0" for="pickup">Pick Up Point</label>
-                          <p class="m-0"><small>Pick up point uppon departure</small></p>
+                          <p class="m-0 d-none d-md-block"><small>Pick up point uppon departure</small></p>
                         </div>
                         <div class="col-sm-4">
                           <select id="pickup" name="pickup" class="form-select">
@@ -314,6 +314,7 @@
                             <option value="9">9</option>
                             <option value="10">10</option>
                           </select>
+                          <p class="m-0 d-md-none d-block"><small>Pick up point uppon departure</small></p>
                         </div>
                         <div class="col-sm-4 mt-2 mt-md-0">
                           <div class="d-flex">
@@ -326,10 +327,11 @@
                       <div class="row mb-2">
                         <div class="col-sm-4">
                           <label class="col-form-label pb-0" for="pickup_note">Note</label>
-                          <p class="m-0"><small>Please write note box if your hotel / pick up point not on list and please confirmation by Whatsapp or E-mail</small></p>
+                          <p class="m-0 d-none d-md-block"><small>Please write note box if your hotel / pick up point not on list and please confirmation by Whatsapp or E-mail</small></p>
                         </div>
                         <div class="col-sm-4">
                           <textarea class="form-control" id="pickup_note" name="pickup_note" rows="2"></textarea>
+                          <p class="m-0 d-md-none d-block"><small>Please write note box if your hotel / pick up point not on list and please confirmation by Whatsapp or E-mail</small></p>
                         </div>
                       </div>
                       <div class="form-check mt-3">
@@ -341,7 +343,7 @@
                       <div class="row mb-2 mt-3">
                         <div class="col-sm-4">
                           <label class="col-form-label pb-0" for="dropoff">Drop Off after Lembongan</label>
-                          <p class="m-0"><small>Drop off point uppon arrival (back from activities)</small></p>
+                          <p class="m-0 d-none d-md-block"><small>Drop off point uppon arrival (back from activities)</small></p>
                         </div>
                         <div class="col-sm-4">
                           <select id="dropoff" name="dropoff" class="form-select">
@@ -357,6 +359,7 @@
                             <option value="9">9</option>
                             <option value="10">10</option>
                           </select>
+                          <p class="m-0 d-md-none d-block"><small>Drop off point uppon arrival (back from activities)</small></p>
                         </div>
                         <div class="col-sm-4 mt-2 mt-md-0">
                           <div class="d-flex">
@@ -369,10 +372,11 @@
                       <div class="row mb-2">
                         <div class="col-sm-4">
                           <label class="col-form-label pb-0" for="dropoff_note">Note</label>
-                          <p class="m-0"><small>Please write note box if your hotel / drop off point not on list and please confirmation by Whatsapp or E-mail</small></p>
+                          <p class="m-0 d-none d-md-block"><small>Please write note box if your hotel / drop off point not on list and please confirmation by Whatsapp or E-mail</small></p>
                         </div>
                         <div class="col-sm-4">
                           <textarea class="form-control" id="dropoff_note" name="dropoff_note" rows="2"></textarea>
+                          <p class="m-0 d-md-none d-block"><small>Please write note box if your hotel / drop off point not on list and please confirmation by Whatsapp or E-mail</small></p>
                         </div>
                       </div>
                     </div>
