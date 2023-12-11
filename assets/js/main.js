@@ -44,6 +44,7 @@ $(document).on("click", "#oneway-option", function () {
 
   if ($(this).hasClass("active")) {
     returnDateInput.prop("disabled", true);
+    openCheck.prop("disabled", true);
     openCheck.prop("checked", false);
   }
 });
