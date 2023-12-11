@@ -35,45 +35,42 @@ window.addEventListener("load", function () {
     });
   }
 
+  // Event listener untuk tombol return-option
   $(document).on("click", "#return-option", function () {
-    $("#oneway-option").removeClass("active");
-    $(this).toggleClass("active");
-
-    var returnDateInput = $("#return_date");
-    var openCheck = $("#openCheck");
-
-    if ($(this).hasClass("active")) {
-      returnDateInput.removeAttr("disabled");
-      openCheck.removeAttr("disabled");
-    } else {
-      returnDateInput.prop("disabled", true);
-      openCheck.prop("checked", false);
-    }
+    toggleActiveState($(this), "#oneway-option");
+    toggleInputState("#return_date", "#openCheck", $(this).hasClass("active"));
   });
 
+  // Event listener untuk checkbox openCheck
   $(document).on("click", "#openCheck", function () {
-    var returnDateInput = $("#return_date");
-
-    if ($(this).is(":checked")) {
-      returnDateInput.prop("disabled", true);
-    } else {
-      returnDateInput.removeAttr("disabled");
-    }
+    toggleInputState("#return_date", null, !$(this).is(":checked"));
   });
 
+  // Event listener untuk tombol oneway-option
   $(document).on("click", "#oneway-option", function () {
-    $("#return-option").removeClass("active");
-    $(this).toggleClass("active");
-
-    var returnDateInput = $("#return_date");
-    var openCheck = $("#openCheck");
-
-    if ($(this).hasClass("active")) {
-      returnDateInput.prop("disabled", true);
-      openCheck.prop("disabled", true);
-      openCheck.prop("checked", false);
-    }
+    toggleActiveState($(this), "#return-option");
+    toggleInputState("#return_date", "#openCheck", $(this).hasClass("active"), true);
   });
+
+  // Fungsi untuk mengaktif/nonaktifkan elemen dan checkbox
+  function toggleInputState(dateInput, checkInput, isActive, disableCheckbox = false) {
+    var dateInput = $(dateInput);
+    var checkInput = $(checkInput);
+
+    dateInput.prop("disabled", !isActive);
+    if (checkInput) {
+      checkInput.prop("disabled", !isActive || disableCheckbox);
+      if (!isActive) {
+        checkInput.prop("checked", false);
+      }
+    }
+  }
+
+  // Fungsi untuk mengatur state active pada tombol
+  function toggleActiveState(targetButton, siblingButton) {
+    $(siblingButton).removeClass("active");
+    targetButton.toggleClass("active");
+  }
 })();
 
 /**
