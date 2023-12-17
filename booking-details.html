@@ -416,7 +416,53 @@
                     <div class="col card p-3 p-md-4 mt-4">
                       <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="" id="terms_and_conditions" name="terms_and_conditions" />
-                        <label class="form-check-label m-0 mb-3" for="terms_and_conditions">I agree to the <a href="">Terms And Conditions</a></label>
+                        <label class="form-check-label m-0 mb-3" for="terms_and_conditions">I agree to the <a href="javaScript:void(0)" data-bs-toggle="modal" data-bs-target="#modalCenter">Terms And Conditions</a></label>
+                        <!-- Modal -->
+                        <div class="modal fade" id="modalCenter" tabindex="-1" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body pt-2 pb-0">
+                                <h6 class="mb-2"><u>Term and Condition:</u></h6>
+                                <ol>
+                                  <li>Confirmation Seat <a href="">+62 813 3951 5837</a></li>
+                                  <li>Reconfirm seat at least 48 hour before Departure Date</li>
+                                  <li>Cancellation 100% charge or Not Refundable Ticket</li>
+                                  <li>Don't put valuables on lugage, We are not responsible for any damage/lost lugage and electronic</li>
+                                  <li>Please report on arrival to the office for your next service or use this ticket for return checkin.</li>
+                                </ol>
+                                <h6 class="mb-2"><u>INSURANCE POLICY</u></h6>
+                                <p>Ammount of compensation for the victim / heir of victim of boat general passenger given based on the regulation of financial ministry number 37/PMK/010/2008 date of 26 February 2008, that it is responsible of first party as follows:</p>
+                                <table class="table table-bordered">
+                                  <thead>
+                                    <tr>
+                                      <th style="width: 25%">Death (IDR)</th>
+                                      <th style="width: 25%">Permanent defect (IDR)</th>
+                                      <th style="width: 25%">Caring Cost Max (IDR)</th>
+                                      <th style="width: 25%">Burial Cost (IDR)</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td>50.000.000</td>
+                                      <td>50.000.000</td>
+                                      <td>20.000.000</td>
+                                      <td>4.000.000</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                                <p class="mt-2"><span class="text-primary">*</span>Buying a ticket means agreeing to all regulations</p>
+                              </div>
+                              <hr class="m-0" />
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-label-secondary" data-bs-dismiss="modal">Close</button>
+                                <button class="btn btn-primary" id="agreeButton">Agree</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                       <div class="row">
                         <div class="col-md-6 order-last order-md-first mt-2 mt-md-0">
@@ -426,7 +472,7 @@
                           </a>
                         </div>
                         <div class="d-grid col-md-6">
-                          <button class="btn btn-primary">
+                          <button class="btn btn-primary" id="proceedButton" disabled>
                             <span class="align-middle me-2">Proceed to Payment</span>
                             <i class="fa-solid fa-arrow-right"></i>
                           </button>

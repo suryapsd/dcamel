@@ -39,6 +39,22 @@ $(document).on("click", "#oneway-option", function () {
   }
 });
 
+$(document).on("click", "#agreeButton", function () {
+  $("#terms_and_conditions").prop("checked", true);
+  $("#proceedButton").prop("disabled", false);
+  $("#modalCenter").modal("hide");
+});
+
+$(document).on("click", "#terms_and_conditions", function () {
+  var buttonCheckout = $("#proceedButton");
+
+  if ($(this).is(":checked")) {
+    buttonCheckout.removeAttr("disabled");
+  } else {
+    buttonCheckout.prop("disabled", true);
+  }
+});
+
 /**
  * Form Picker
  */
