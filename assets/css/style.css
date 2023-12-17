@@ -708,3 +708,8 @@
 .stepper-container::-webkit-scrollbar-track {
   background-color: transparent;
 }
+
+.overflow-x-scroll {
+  overflow-x: auto;
+  white-space: nowrap;
+}
