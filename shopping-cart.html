@@ -211,8 +211,8 @@
                       <div class="col">
                         <label class="custom-radio-button-container d-block">
                           <span class="custom-radio-button p-2 px-3">
-                            <small class="m-0 text-muted">Executive</small><br />
-                            <p class="m-0 mt-2 text-muted text-end">
+                            <small class="m-0">Executive</small><br />
+                            <p class="m-0 mt-2 text-end">
                               <small><del>IDR 500.000</del></small>
                             </p>
                             <h4 class="m-0 text-end"><small class="fw-normal">IDR</small> 400.000</h4>
@@ -297,17 +297,7 @@
                           <span class="input-group-text" id="basic-addon11">Luggage</span>
                           <input type="number" class="form-control" id="departure_luggage" name="departure_luggage" placeholder="Luggage" value="3" aria-label="Luggage" aria-describedby="basic-addon11" max="10" />
                           <!-- Price Luggage -->
-                          <span class="input-group-text d-md-none overflow-x-scroll d-block col-5"><small class="fw-normal">IDR</small> 100.000</span>
-                        </div>
-                        <div class="form-check mt-2">
-                          <input class="form-check-input" type="checkbox" value="" id="departure_insurance" name="departure_insurance" checked />
-                          <label class="form-check-label m-0 text-nowrap" for="departure_insurance">
-                            Include
-                            <span data-bs-toggle="modal" data-bs-target="#modalCenter">
-                              <a href="javaScript:void(0)" data-bs-toggle="tooltip" data-bs-placement="top" title="Click to view details">Insurance</a>
-                            </span>
-                            Luggage
-                          </label>
+                          <!-- <span class="input-group-text d-md-none overflow-x-scroll d-block col-5"><small class="fw-normal">IDR</small> 100.000</span> -->
                         </div>
                       </div>
                       <div class="col-md-2 mt-3 mt-md-0 col-10">
@@ -320,7 +310,7 @@
                       </div>
                       <!-- Luggage + Surfcase -->
                       <div class="col-md-8 pt-md-2 d-none d-md-block">
-                        <h6 class="m-0 text-end pe-md-3 me-md-2">(<small class="fw-normal">IDR 100.000</small> + <small class="fw-normal">IDR 300.000</small>) <small class="fw-normal">IDR</small> 400.000</h6>
+                        <h6 class="m-0 text-end pe-md-3 me-md-2"><small class="fw-normal">IDR</small> 400.000</h6>
                       </div>
                     </div>
                   </div>
@@ -366,8 +356,8 @@
                       <div class="col">
                         <label class="custom-radio-button-container d-block">
                           <span class="custom-radio-button p-2 px-3">
-                            <small class="m-0 text-muted">Executive</small><br />
-                            <p class="m-0 mt-2 text-muted text-end">
+                            <small class="m-0">Executive</small><br />
+                            <p class="m-0 mt-2 text-end">
                               <small><del>IDR 500.000</del></small>
                             </p>
                             <h4 class="m-0 text-end"><small class="fw-normal">IDR</small> 400.000</h4>
@@ -446,17 +436,7 @@
                           <span class="input-group-text" id="basic-addon11">Luggage</span>
                           <input type="number" class="form-control" id="return_luggage" name="return_luggage" placeholder="Luggage" value="3" aria-label="Luggage" aria-describedby="basic-addon11" max="10" />
                           <!-- Price Luggage -->
-                          <span class="input-group-text d-md-none overflow-x-scroll d-block col-5"><small class="fw-normal">IDR</small> 100.000</span>
-                        </div>
-                        <div class="form-check mt-2">
-                          <input class="form-check-input" type="checkbox" value="" id="return_insurance" name="return_insurance" checked />
-                          <label class="form-check-label m-0 text-nowrap" for="return_insurance">
-                            Include
-                            <span data-bs-toggle="modal" data-bs-target="#modalCenter">
-                              <a href="javaScript:void(0)" data-bs-toggle="tooltip" data-bs-placement="top" title="Click to view details">Insurance</a>
-                            </span>
-                            Luggage
-                          </label>
+                          <!-- <span class="input-group-text d-md-none overflow-x-scroll d-block col-5"><small class="fw-normal">IDR</small> 100.000</span> -->
                         </div>
                       </div>
                       <div class="col-md-2 mt-3 mt-md-0 col-10">
@@ -469,8 +449,46 @@
                       </div>
                       <!-- Luggage + Surfcase -->
                       <div class="col-md-8 pt-md-2 d-none d-md-block">
-                        <h6 class="m-0 text-end pe-md-3 me-md-2">(<small class="fw-normal">IDR 100.000</small> + <small class="fw-normal">IDR 300.000</small>) <small class="fw-normal">IDR</small> 400.000</h6>
+                        <h6 class="m-0 text-end pe-md-3 me-md-2"><small class="fw-normal">IDR</small> 400.000</h6>
                       </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- ===============================================-->
+                <!--    Luggage Protection Section   -->
+                <!-- ===============================================-->
+                <div class="col card overflow-hidden mt-4">
+                  <div class="col bg-light px-3 px-md-4">
+                    <h5 class="m-0 py-3">Luggage Protection</h5>
+                  </div>
+                  <div class="row p-md-4 p-3">
+                    <div class="col-md-9 pe-md-5 d-flex justify-content-between gap-md-4 gap-2">
+                      <div class="col">
+                        <label class="custom-radio-button-container d-flex flex-column h-100" for="insurance_luggage_no">
+                          <input type="radio" name="insurance_luggage" id="insurance_luggage_no" />
+                          <span class="custom-radio-button p-2 px-3 d-flex flex-column flex-grow-1">
+                            <h6 class="m-0">No insurance</h6>
+                            <p class="m-0">We are not responsible for damage to your luggage</p>
+                          </span>
+                        </label>
+                      </div>
+                      <div class="col">
+                        <label class="custom-radio-button-container d-block" for="insurance_luggage_yes">
+                          <input type="radio" name="insurance_luggage" id="insurance_luggage_yes" />
+                          <span class="custom-radio-button p-2 px-3">
+                            <h6 class="m-0">Comprehensive Luggage Insurance LITE</h6>
+                            <ul class="ps-4 my-2">
+                              <li>Loss/Damage of Baggage & Personal Belongings</li>
+                              <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#modalCenter"><u>View All Benefits</u></a>
+                            </ul>
+                            <h5 class="m-0"><small class="fw-normal">+ IDR</small> 50.000</h5>
+                          </span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col mt-auto">
+                      <h6 class="m-0 text-end mt-2 pe-md-3 me-md-2"><small class="fw-normal">luggage: 3 @ IDR</small> 150.000</h6>
                     </div>
                   </div>
                 </div>
@@ -485,12 +503,40 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                       </div>
                       <div class="modal-body pt-2 pb-0">
-                        <h5><span class="fa-solid fa-shield-halved"></span> Comprehensive Travel Insurance LITE</h5>
-                        <ul>
-                          <li>Basic Insurance Cover For Your Trip</li>
-                          <li>Loss/Damage of Baggage & Personal Belongings</li>
+                        <h5><span class="fa-solid fa-shield-halved"></span> INSURANCE POLICY</h5>
+                        <p>Ammount of compensation for the victim / heir of victim of boat general passenger given based on the regulation of financial ministry number 37/PMK/010/2008 date of 26 February 2008, that it is responsible of first party as follows:</p>
+
+                        <div class="table-responsive text-nowrap">
+                          <table class="table table-bordered">
+                            <thead>
+                              <tr>
+                                <th>Death (IDR)</th>
+                                <th>Permanent defect (IDR)</th>
+                                <th>Caring Cost Max (IDR)</th>
+                                <th>Burial Cost (IDR)</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>50.000.000</td>
+                                <td>50.000.000</td>
+                                <td>20.000.000</td>
+                                <td>4.000.000</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <h5 class="mt-4"><span class="fa-solid fa-shield-halved"></span> Loss/Damage of Baggage & Personal Belongings</h5>
+                        <ul class="ps-4">
+                          <li>
+                            <p class="m-0 mb-1">Baggage & Personal Effects</p>
+                            <ol type="a" class="ps-4">
+                              <li>Non electronic item (limit anyone item/set IDR 1.000.000)</li>
+                              <li>Electronic item (limit anyone item/set IDR 5.000.000)</li>
+                            </ol>
+                          </li>
+                          <li class="mt-2">Baggage delay (IDR 300.000/day)</li>
                         </ul>
-                        <h5><small class="fw-normal fs-6">Extra Charge: </small><small class="fw-normal">IDR</small> 58.000<small class="fw-normal">/Luggage</small></h5>
                       </div>
                       <div class="modal-footer">
                         <button type="button" class="btn btn-label-secondary" data-bs-dismiss="modal">Close</button>
