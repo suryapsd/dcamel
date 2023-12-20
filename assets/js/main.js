@@ -42,7 +42,14 @@ $(document).on("click", "#oneway-option", function () {
 $(document).on("click", "#agreeButton", function () {
   $("#terms_and_conditions").prop("checked", true);
   $("#proceedButton").prop("disabled", false);
-  $("#modalCenter").modal("hide");
+  $("#term_condition").modal("hide");
+});
+
+var checkbox = $("#terms_and_conditions");
+checkbox.change(function () {
+  if (checkbox.prop("checked")) {
+    $("#term_condition").modal("show");
+  }
 });
 
 $(document).on("click", "#terms_and_conditions", function () {
