@@ -104,8 +104,8 @@ $(document).on("click", "#terms_and_conditions", function () {
 
   var carousel = function () {
     $(".featured-carousel").owlCarousel({
-      loop: true,
-      autoplay: true,
+      loop: false,
+      autoplay: false,
       margin: 20,
       animateOut: "fadeOut",
       animateIn: "fadeIn",
@@ -137,7 +137,7 @@ $(document).on("click", "#terms_and_conditions", function () {
       animateIn: "fadeIn",
       nav: true,
       dots: true,
-      autoplayHoverPause: false,
+      autoplayHoverPause: true,
       items: 1,
       navText: ["<span class='ion-ios-arrow-back'></span>", "<span class='ion-ios-arrow-forward'></span>"],
       responsive: {
@@ -156,12 +156,12 @@ $(document).on("click", "#terms_and_conditions", function () {
 
   var carousel3 = function () {
     $(".featured-carousel3").owlCarousel({
-      loop: false,
-      autoplay: false,
+      loop: true,
+      autoplay: true,
       margin: 10,
       nav: false,
       dots: true,
-      autoplayHoverPause: false,
+      autoplayHoverPause: true,
       items: 1,
       responsive: {
         0: {
